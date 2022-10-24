@@ -1,0 +1,169 @@
+datasets are from http://snap.stanford.edu/data/
+
+#num of thread = 8, k = 7, dataset = soc-Epinions1
+dfs avg =  58.660706391999994
+parallel dfs avg =  8.390045470000004
+acceleration rate =  6.9917030368608915
+
+#num of thread = 20, k = 7, dataset = soc-Epinions1
+dfs avg =  58.660706391999994
+parallel dfs avg =  5.554151268000004
+acceleration rate =  10.561596823977599
+
+#num of thread = 30, k = 7, dataset = soc-Epinions1
+dfs avg =  58.660706391999994
+parallel dfs avg =  5.3886840379999965
+acceleration rate =  10.885905719900371
+
+#num of thread = 40, k = 7, dataset = soc-Epinions1
+dfs avg =  58.660706391999994 
+parallel dfs avg =  5.486659052
+acceleration rate =  10.691516610753672
+
+#num of thread = 8, k = 7, dataset = web-google
+dfs avg =  0.004450925999999998 
+parallel dfs avg =  0.001707849999999999
+acceleration rate =  2.6061574494247157
+
+#num of thread = 20, k = 7, dataset = web-google
+dfs avg =  0.004450199999999998 
+parallel dfs avg =  0.0018977400000000008
+acceleration rate =  2.3449998419172258
+
+#num of thread = 20, k = 10, dataset = web-google (Nodes: 875713 Edges: 5105039)
+dfs avg =  9.662936491999998 
+parallel dfs avg =  1.5895904160000005
+acceleration rate =  6.078884469066901
+
+#num of thread = 8, k = 7, dataset = wiki-topcats (Nodes: 1791489, Edges: 28511807)
+dfs avg =  6.741701656000002 
+parallel dfs avg =  1.5827161360000002
+acceleration rate =  4.259577256246537
+
+#num of thread = 8, k = 7, dataset = wikiTalk (Nodes: 2394385, Edges: 5021410, avgDegree: 4.2)
+dfs avg =  197.16012637800023 
+parallel dfs avg =  52.26980271400001
+acceleration rate =  3.7719699738830776
+
+#num of thread = 20, k = 7, dataset = wikiTalk (Nodes: 2394385, Edges: 5021410)
+dfs avg =  197.16012637800023 
+parallel dfs avg =  45.56721480199994
+acceleration rate =  4.3267978355645935
+
+
+
+#dataset: SocLivejournal1 (V: 5M, E: 69M, avgDegree: 28.3)	k = 7
+NumThread = 8
+dfs avg =  93.735859194 
+parallel dfs avg =  12.259586895999995
+acceleration rate =  7.645923144815241
+NumThread = 20
+dfs avg =  93.735859194 
+parallel dfs avg =  8.403337128000004
+acceleration rate =  11.154599389053567
+NumThread = 30
+dfs avg =  93.735859194 
+parallel dfs avg =  8.432057404000005
+acceleration rate =  11.11660591275547
+NumThread = 40
+dfs avg =  93.735859194 
+parallel dfs avg =  8.403065599999996
+acceleration rate =  11.154959827280182
+
+#dataset: SocSlashdot0922 (V: 82K, E: 948K, avgDegree: 21.2)	k = 7
+NumThread = 8
+dfs avg =  210.81352253000023 
+parallel dfs avg =  30.297711426000003
+acceleration rate =  6.95806754397596
+NumThread = 20
+dfs avg =  210.81352253000023 
+parallel dfs avg =  22.19687529600003
+acceleration rate =  9.497441406448308
+NumThread = 30
+dfs avg =  210.81352253000023 
+parallel dfs avg =  21.76267119200001
+acceleration rate =  9.686932301191758
+NumThread = 40
+dfs avg =  210.81352253000023 
+parallel dfs avg =  21.86287075400001
+acceleration rate =  9.642536193076564
+
+#dataset: USPatents (V: 4M, E: 17M, avgDegree: 8.8)	k = 7
+NumThread = 8
+dfs avg =  0.00022973799999999984 
+parallel dfs avg =  0.00031067999999999976
+acceleration rate =  0.7394682631646711
+NumThread = 20
+dfs avg =  0.00022973799999999984 
+parallel dfs avg =  0.0004022799999999997
+acceleration rate =  0.5710897882072189
+NumThread = 30
+dfs avg =  0.00022973799999999984 
+parallel dfs avg =  0.0003897879999999993
+acceleration rate =  0.5893921824171094
+NumThread = 40
+dfs avg =  0.00022973799999999984 
+parallel dfs avg =  0.008874839999999997
+acceleration rate =  0.025886438516074646
+
+#dataset: WebStanford (V: 282K, E: 2.3M, avgDegree: 16.4)	k = 7
+NumThread = 8
+dfs avg =  0.21902252199999991 
+parallel dfs avg =  0.024947154000000003
+acceleration rate =  8.779459252145552
+NumThread = 20
+dfs avg =  0.21902252199999991 
+parallel dfs avg =  0.015734838000000015
+acceleration rate =  13.919591800055374
+NumThread = 30
+dfs avg =  0.21902252199999991 
+parallel dfs avg =  0.016831317999999998
+acceleration rate =  13.012796858808082
+NumThread = 40
+dfs avg =  0.21902252199999991 
+parallel dfs avg =  0.021423356
+acceleration rate =  10.22353929981838
+
+WebUK2005 8
+dfs avg =  483.0557719299999 , parallel dfs avg =  55.11895681999999
+acceleration rate =  8.763877253836604
+WebUK2005 20
+dfs avg =  483.0557719299999 , parallel dfs avg =  22.85004500000001
+acceleration rate =  21.14025473166463
+WebUK2005 30
+dfs avg =  483.0557719299999 , parallel dfs avg =  20.14517811999999
+acceleration rate =  23.978729254839674
+USPatents 40
+dfs avg =  483.0557719299999 , parallel dfs avg =  19.39409137
+acceleration rate =  24.907368059388485
+
+WikiTalk 8
+dfs avg =  497.52872595999986 , parallel dfs avg =  107.06483188999997
+acceleration rate =  4.646985543032174
+WikiTalk 20
+dfs avg =  497.52872595999986 , parallel dfs avg =  90.20068805999999
+acceleration rate =  5.5157974585410265
+WikiTalk 30
+dfs avg =  497.52872595999986 , parallel dfs avg =  88.65455352
+acceleration rate =  5.611992911878576
+USPatents 40
+dfs avg =  497.52872595999986 , parallel dfs avg =  88.41465388
+acceleration rate =  5.627220196272739
+
+# dataset: BaiduBaike (V: 416K, E: 3M, avgDegree: 15.8)
+threadNum = 8
+dfs avg =  7.447033932 
+parallel dfs avg =  1.2589701340000004
+acceleration rate =  5.915179185656519
+threadNum = 20
+dfs avg =  7.447033932 
+parallel dfs avg =  0.9443282200000003
+acceleration rate =  7.886065219993106
+threadNum = 30
+dfs avg =  7.447033932 
+parallel dfs avg =  1.0684760520000003
+acceleration rate =  6.9697714965725766
+threadNum = 40
+dfs avg =  7.447033932 
+parallel dfs avg =  0.9956904080000004
+acceleration rate =  7.479266519156823

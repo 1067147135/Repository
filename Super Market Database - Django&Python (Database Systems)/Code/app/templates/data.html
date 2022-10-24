@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Address data</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Postal Code</th>
+                <th>Segment</th>
+                <th>Country</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Region</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for obj in data_list %}
+                <tr>
+                    <th>{{ obj.PostalCode }}</th>
+                    <th>{{ obj.Segment }}</th>
+                    <th>{{ obj.Country }}</th>
+                    <th>{{ obj.City }}</th>
+                    <th>{{ obj.State }}</th>
+                    <th>{{ obj.Region }}</th>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+</body>
+</html>

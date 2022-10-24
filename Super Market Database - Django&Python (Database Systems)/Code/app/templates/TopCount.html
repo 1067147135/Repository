@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Top Sales data</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Postal Code</th>
+                <th>Segment</th>
+                <th>Country</th>
+                <th>City</th>
+                <th>State</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for obj in data_list %}
+                <tr>
+                    <th>{{ obj.ProductID }}</th>
+                    <th>{{ obj.ProductName }}</th>
+                    <th>{{ obj.Category }}</th>
+                    <th>{{ obj.SubCategory }}</th>
+                    <th>{{ obj.Sales }}</th>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+</body>
+</html>
