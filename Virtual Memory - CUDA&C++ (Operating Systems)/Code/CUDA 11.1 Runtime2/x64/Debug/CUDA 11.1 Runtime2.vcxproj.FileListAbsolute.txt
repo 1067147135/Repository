@@ -1,0 +1,1 @@
+E:\CSC3150_Ass3\CUDA 11.1 Runtime2\x64\Debug\CUDA 11.1 Runtime2.exe
