@@ -11,7 +11,6 @@ Notes: Maybe the program can't run normally because the environment is incompati
 The above folders contains：
 1. Some Course Assignments / Projects & Corresponding Reports / Documents
 2. Research Code & Corresponding Reports
-3. Work Items Record of Internship in Microsoft China
 
 The Following links are homeworks of 2021 Tencent Game Client Development Open Programs:
 (The links in these Repositories are recordings of program output (.mp4) and program package (.apk, .exe), some files that are too big to upload are missing)

@@ -1,0 +1,2 @@
+C:\Users\珞绮locky\Desktop\CUDA 11.1 Heat Distribution\x64\Release\CUDA 11.1 Heat Distribution.exe
+C:\Users\珞绮locky\Desktop\project4\CUDA 11.1 Heat Distribution\x64\Release\CUDA 11.1 Heat Distribution.exe
