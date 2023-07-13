@@ -1,7 +1,5 @@
 import os
 import re
-import csv
-import codecs
 import time
 import json
 import random
@@ -12,40 +10,12 @@ import logging.handlers
 import datetime
 from bs4 import BeautifulSoup
 from threading import Thread
-import multiprocessing
-from lxml import etree
 from clickhouse_driver import Client
 
-#----------------------------------------------------------------------------------------------------------------------------------------------------------
-print("get data")
+# Arguments
+output_folder_path = 'xxx'
+n_threads = 8
 
-client = Client(host='xx.xx.x.22', port='9000', database='xxx', user='xxx', password='xxx')
-
-# 从数据库获取数据并存入set
-query_cited_by_id = "select distinct cited_by_patent_id from xxx.google_patent_data_cite where cited_by_patent_id like 'CN%'"
-df_cited_by_id = client.execute(query_cited_by_id)
-cited_by_id_set = {id[0] for id in df_cited_by_id}
-
-query_common_id = 'select distinct patent_id from his_data_snaps.google_patent_data_common'
-df_common_id = client.execute(query_common_id)
-common_id_set = {id[0] for id in df_common_id}
-
-print("start check")
-
-count = 0
-to_add = []
-
-# check: cite表的cited_by_patent_id中以CN开头的部分是否在common表都有
-for id in cited_by_id_set:
-    if id not in common_id_set:
-        count += 1
-        to_add.append(id)
-        print('check 2 error:', id, ", count =", count)
-
-#----------------------------------------------------------------------------------------------------------------------------------------------------------
-print("start crawling")
-
-output_folder_path = '/home/swl/bopu/extra'
 
 class data:
     def __init__(self, n, k):
@@ -419,25 +389,59 @@ def operate(tid, to_add, chunks, d: data):
         cnt = str(datetime.datetime.now()) + ': thread ' + str(tid) + ': finish line ' + str(i) + " - " + id
         logger.info(cnt)
 
-# to_add = ['CN-114640860-A', 'CN-114181065-A', 'CN-109371072-A', 'CN-114946382-A']
-n_threads = 8
-num_data = len(to_add) # number of lines of data 
-d = data(num_data, n_threads)
-chunks = generate_chunks(num_data, n_threads)
+if __name__ == '__main__':
+    #----------------------------------------------------------------------------------------------------------------------------------------------------------
+    print("get data")
 
-threads_pool = [None] * n_threads
-for i in range(n_threads):
-    threads_pool[i] = Thread(target=operate, args=(i, to_add, chunks, d))
-    threads_pool[i].start()
+    client = Client(host='xx.xx.x.xx', port='xxx', database='xxx', user='xxx', password='xxx')
 
-for thread in threads_pool:
-    thread.join()
-d.id_list = combine(d.id_list)
-d.pub_number_list = combine(d.pub_number_list)
-d.pri_date_list = combine(d.pri_date_list)
-d.pub_date_list = combine(d.pub_date_list)
-d.assignee_list = combine(d.assignee_list)
-d.title_list = combine(d.title_list)
+    # 从数据库获取数据并存入set
+    query_cited_by_id = "select distinct cited_by_patent_id from xxx.google_patent_data_cite where cited_by_patent_id like 'CN%'"
+    df_cited_by_id = client.execute(query_cited_by_id)
+    cited_by_id_set = {id[0] for id in df_cited_by_id}
 
-# print(d.cid_list)
-save_file(d)
+    query_common_id = 'select distinct patent_id from his_data_snaps.google_patent_data_common'
+    df_common_id = client.execute(query_common_id)
+    common_id_set = {id[0] for id in df_common_id}
+
+    print("start check")
+
+    count = 0
+    to_add = []
+
+    # check: cite表的cited_by_patent_id中以CN开头的部分是否在common表都有
+    for id in cited_by_id_set:
+        if id not in common_id_set:
+            count += 1
+            to_add.append(id)
+            print('check 2 error:', id, ", count =", count)
+
+    #----------------------------------------------------------------------------------------------------------------------------------------------------------
+    print("start crawling")
+    # to_add = ['CN-114640860-A', 'CN-114181065-A', 'CN-109371072-A', 'CN-114946382-A']
+    
+    try:
+        os.mkdir('log/') 
+    except Exception as e:
+        print('errer',e) 
+
+    num_data = len(to_add) # number of lines of data 
+    d = data(num_data, n_threads)
+    chunks = generate_chunks(num_data, n_threads)
+
+    threads_pool = [None] * n_threads
+    for i in range(n_threads):
+        threads_pool[i] = Thread(target=operate, args=(i, to_add, chunks, d))
+        threads_pool[i].start()
+
+    for thread in threads_pool:
+        thread.join()
+    d.id_list = combine(d.id_list)
+    d.pub_number_list = combine(d.pub_number_list)
+    d.pri_date_list = combine(d.pri_date_list)
+    d.pub_date_list = combine(d.pub_date_list)
+    d.assignee_list = combine(d.assignee_list)
+    d.title_list = combine(d.title_list)
+
+    # print(d.cid_list)
+    save_file(d)

@@ -13,8 +13,9 @@ from threading import Thread
 import multiprocessing
 from clickhouse_driver import Client
 
-input_folder_path = '/home/swl/bopu/data/CN_2021_p'   # path to folder
-output_folder_path = '/home/swl/bopu/result_p/CN_2021' 
+# Arguments
+input_folder_path = 'xxx'   # path to folder
+output_folder_path = 'xxx' 
 n_thread = 4
 n_processes = 16
 
@@ -227,8 +228,8 @@ def db2dict_common(date_str):
 
     date_str: e.g. 2022-01-01
     """
-    client = Client(host='10.25.1.22', port='9000', database='his_data_snaps', user='bdf', password='bdf2022')
-    query_common = f"select * from his_data_snaps.google_patent_data_common where priority_date = '{date_str}'"
+    client = Client(host='xx.xx.x.xx', port='xxx', database='xxx', user='xxx', password='xxx')
+    query_common = f"select * from xxx.google_patent_data_common where priority_date = '{date_str}'"
     data_common = client.execute(query_common)
     dict_common = {}
     for line in data_common:
@@ -239,15 +240,15 @@ def db2dict_cite():
     """
     get cite data
     """
-    client = Client(host='10.25.1.22', port='9000', database='his_data_snaps', user='bdf', password='bdf2022')
+    client = Client(host='xx.xx.x.x', port='xxx', database='xxx', user='xxx', password='xxx')
 
-    query_cite_id = "select distinct patent_id from his_data_snaps.google_patent_data_cite where patent_id like 'CN%'"
+    query_cite_id = "select distinct patent_id from xxx.google_patent_data_cite where patent_id like 'CN%'"
     data_cite_id = client.execute(query_cite_id)
     dict_cite = {}
     for id in data_cite_id:
         dict_cite[id[0]] = []
 
-    query_cite = "select * from his_data_snaps.google_patent_data_cite where patent_id like 'CN%'"
+    query_cite = "select * from xxx.google_patent_data_cite where patent_id like 'CN%'"
     data_cite = client.execute(query_cite)
     
     for line in data_cite:
@@ -353,10 +354,10 @@ def worker(pid, queue):
         logging.basicConfig()
         for tid in range (n_thread):
             # initialize logger
-            logger_pool[tid] = logging.getLogger('logger{}'.format(10 * pid + tid + 200))
+            logger_pool[tid] = logging.getLogger('logger{}'.format(10 * pid + tid))
             # write in file，maximum 1MB，back up 5 files。
             handler = logging.handlers.RotatingFileHandler(
-                'log/process_{}.log'.format(10 * pid + tid + 200), maxBytes=1e6, backupCount=5)
+                'log/process_{}.log'.format(10 * pid + tid), maxBytes=1e6, backupCount=5)
             logger_pool[tid].setLevel(logging.DEBUG)
             logger_pool[tid].addHandler(handler)
     except Exception as e:
@@ -408,23 +409,27 @@ def worker(pid, queue):
             save_cite(d.id_list, d.pub_number_list, d.pri_date_list, d.pub_date_list, d.assignee_list, d.title_list, file_path)
 
 
-# if __name__ == 'main': 
-file_names = os.listdir(input_folder_path)
-# file_names = ['US_2021/20210101-20210101-US.csv']
+if __name__ == '__main__':
+    try:
+        os.mkdir('log/') 
+    except Exception as e:
+        print('errer',e)
+    file_names = os.listdir(input_folder_path)
+    # file_names = ['US_2021/20210101-20210101-US.csv']
 
-print('set multirocessing...')
+    print('set multirocessing...')
 
-pool = multiprocessing.Pool(processes=n_processes)
-manager = multiprocessing.Manager()
-queue = manager.Queue()
+    pool = multiprocessing.Pool(processes=n_processes)
+    manager = multiprocessing.Manager()
+    queue = manager.Queue()
 
-for ele in file_names:
-    queue.put(ele)
+    for ele in file_names:
+        queue.put(ele)
 
-for i in range(n_processes):
-    pool.apply_async(worker, (i, queue))
+    for i in range(n_processes):
+        pool.apply_async(worker, (i, queue))
 
-pool.close()
-pool.join()
+    pool.close()
+    pool.join()
 
 

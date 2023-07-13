@@ -13,7 +13,7 @@
 python 模块：
 - pandas （查询 MySQL 数据库）
 - pymysql （查询 MySQL 数据库）
-- lickhouse_driver （查询 ClickHouse 数据库）
+- clickhouse_driver （查询 ClickHouse 数据库）
 - datetime （处理日期时间数据）
 - requests （操作企业微信机器人）
 - json （编辑告警信息）
