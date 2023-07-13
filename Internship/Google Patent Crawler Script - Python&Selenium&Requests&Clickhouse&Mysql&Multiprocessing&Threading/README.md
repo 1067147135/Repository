@@ -21,6 +21,7 @@
     - `representative figure link`：代表性图链接
 <br/>
 <br/>
+
 2. `分析`：分析 csv 文件内容，再访问各个专利详情页进一步提取补全信息。补全的信息如下：
     - `abstract`：概要
     - `claims_num`：专利的权利要求数量
@@ -34,23 +35,28 @@
       - `Title`：引用专利的标题
 <br/>
 <br/>
+
 3. `入库`：将分析后的数据存入数据库。
     - `google_patent_data_common`：存储除了被引用信息以外的信息
     - `google_patent_data_cite`：存储被引用信息
 <br/>
 <br/>
+
 4. `检查`：检查入库数据的引用关系是否完整。
     - `google_patent_data_cite` 表的 `patent_id` 是否在 `google_patent_data_common` 表都有。
     - `google_patent_data_cite` 表的 `cited_by_patent_id` 中以 CN 开头的部分是否在 `google_patent_data_common` 表都有。
 <br/>
 <br/>
+
 5. `补全`：爬取补全检查时发现的缺漏数据。
 <br/>
 <br/>
+
 6. `链接`：将 `google_patent_data_common` 里的 `assignee` 与 A 股公司代码匹配链接。
 <br/>
 <br/>
-1. `入库`：将匹配成功的链接关系（`专利号 - A 股公司代码`）入库至 `google_patent_symbol` 数据表。
+
+7. `入库`：将匹配成功的链接关系（`专利号 - A 股公司代码`）入库至 `google_patent_symbol` 数据表。
 
 
 ## 项目使用的技术栈
