@@ -242,6 +242,8 @@ folders_cite = ['xxx', 'xxx', 'xxx']
  - `google_patent_data_cite` 表的 `patent_id` 是否在 `google_patent_data_common` 表都有。
  - `google_patent_data_cite` 表的 `cited_by_patent_id` 中以 CN 开头的部分是否在 `google_patent_data_common` 表都有。
 
+**注意**：如果爬取国家发生变化，此处检查的条件也应当相应变更，注意修改主程序里的 `query_cited_by_id` 以满足需求。
+
 该程序无需参数，输出结果在当前文件夹的 `output.txt` 。
 
 ---
