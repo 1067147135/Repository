@@ -1,24 +1,19 @@
+import config
+from utils.db_helper import fix
+
 import os
 import csv
 import codecs
+import base64
 from clickhouse_driver import Client
 
-folders_common = ['xxx', 'xxx', 'xxx']
-folders_cite = ['xxx', 'xxx', 'xxx']
-
-def fix(string):
-    special_characters = ["\\", "'", "\"", "\0", "\b", "\n", "\r", "\t", "\Z", "\%", "\_"]
-    # 需要转义的特殊字符列表
-
-    for character in special_characters:
-        if character in string:
-            string = string.replace(character, "\\" + character)  # 加上转义符进行替换
-
-    return string
+# Arguments
+folders_common = config.folders_cite
+folders_cite = config.folders_common
 
 if __name__ == '__main__':
-    client = Client(host='xx.xx.x.xx', port='xxx', database='xxx', user='xxx', password='xxx')
-    
+    client = Client(host=config.host22, port=config.port22, database=config.database22, user=config.user22, password=base64.b64decode(config.password22).decode('utf-8'))
+
     # insert common
     for folder in folders_common:
         file_names = os.listdir(folder)   # read all file names
@@ -27,11 +22,10 @@ if __name__ == '__main__':
             with codecs.open(file_path, "r", "utf-8") as f:
                 reader = csv.reader(f)
                 data = list(reader)[1:]
-                query = 'INSERT INTO xxx.google_patent_data_common (* EXCEPT(bopu_update_time)) VALUES'
-                query += ','.join([f"('{fix(row[0])}', '{fix(row[1])}', '{fix(row[2])}', '{fix(row[3])}', '{fix(row[4])}', '{fix(row[5])}', '{fix(row[6])}', '{fix(row[7])}', '{fix(row[8])}', '{fix(row[9])}', '{fix(row[10])}', '{fix(row[11])}', '{fix(row[12])}')" for row in data])
+                query = 'INSERT INTO his_data_snaps.google_patent_data_common (* EXCEPT(bopu_update_time)) VALUES'
+                query += ','.join([f"('{fix(row[0])}', '{fix(row[1])}', '{fix(row[2])}', '{fix(row[3])}', '{fix(row[4])}', '{fix(row[5])}', '{fix(row[6])}', '{fix(row[7])}', '{fix(row[8])}', '{fix(row[9])}', '{fix(row[10])}', '{fix(row[11])}', '{fix(row[12])}')" for row in data if row[1] != '' and row[2] != '' and row[3] != '' and row[5] != ''])
                 client.execute(query)
                 print("finish", file_path)
-
 
     # insert cite
     for folder in folders_cite:
@@ -42,7 +36,7 @@ if __name__ == '__main__':
                 reader = csv.reader(f)
                 data = list(reader)[1:]
                 if len(data) > 0:
-                    query = 'INSERT INTO xxx.google_patent_data_cite (patent_id, cited_by_patent_id, priority_date, publication_date, assignee, title) VALUES'
+                    query = 'INSERT INTO his_data_snaps.google_patent_data_cite (patent_id, cited_by_patent_id, priority_date, publication_date, assignee, title) VALUES'
                     query += ','.join([f"('{fix(row[0])}', '{fix(row[1])}', '{fix(row[2])}', '{fix(row[3])}', '{fix(row[4])}', '{fix(row[5])}')" for row in data])
                     client.execute(query)
                 print("finish", file_path)

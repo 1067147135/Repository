@@ -1,3 +1,6 @@
+import config
+
+import base64
 import pymysql
 import datetime
 from clickhouse_driver import Client
@@ -12,8 +15,9 @@ from multiprocessing import Process, Array
 
 warnings.filterwarnings("ignore")
 
-output_path = 'xxx'
-n_processes = 8
+# Arguments
+output_path = config.step6_output_folder_path
+n_processes = config.step6_n_threads
 
 def has_chinese(string):
     """
@@ -199,8 +203,8 @@ if __name__ == '__main__':
     pool = multiprocessing.Pool(processes=n_processes)
     manager = multiprocessing.Manager()
 
-    client = Client(host='xx.xx.x.xx', port='xxx', database='xxx', user='xxx', password='xxx')
-    query_ass = "select patent_id, assignee from xxx.google_patent_data_common" #  where assignee like '%珠海格力电器%'  limit 2000
+    client = Client(host=config.host22, port=config.port22, database=config.database22, user=config.user22, password=base64.b64decode(config.password22).decode('utf-8'))
+    query_ass = "select patent_id, assignee from his_data_snaps.google_patent_data_common" #  where assignee like '%珠海格力电器%'  limit 2000
     df_ass = client.execute(query_ass)
     manager = multiprocessing.Manager()
     shared_id_list = manager.list([ass[0] for ass in df_ass])
@@ -208,8 +212,9 @@ if __name__ == '__main__':
     num_data = len(shared_id_list)
     client.disconnect()
 
-    conn = pymysql.connect(host='xx.xx.x.xx', user='xxx', password='xxx', database='xxx')
-    query_des = "select S_INFO_COMPNAME, S_INFO_COMPNAMEENG, S_INFO_WINDCODE from xxx.asharedescription"
+    conn = pymysql.connect(host=config.host70, user=config.user70, password=base64.b64decode(config.password70).decode('utf-8'), database=config.database70)
+   
+    query_des = "select S_INFO_COMPNAME, S_INFO_COMPNAMEENG, S_INFO_WINDCODE from wind_db.asharedescription"
     df_des = pd.read_sql(query_des, con=conn)
     desc_dict = {}
     for i in range(len(df_des)):

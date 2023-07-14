@@ -137,44 +137,30 @@ SETTINGS index_granularity = 8192;
 
 该程序使用 requests 访问按要求生成的 patents.google.com 的 csv 下载地址获取 csv 数据文件，每 15 秒请求一次（请求太频繁会被 429 封禁）。
 
-在 `if __name__ == '__main__':` 下的 `# Arguments` 的部分可以看到该程序可以指定的参数：
-```python
-if len(sys.argv) > 2:
-        begin = sys.argv[1]
-        end = sys.argv[2]
-    else:
-        begin = "20210101"
-        end = "20210106"
-    download_path = 'xxx'
-    countrys = ["CN"] # , "US"
-    headers = {'cookie': 'xxx', 
-            'user-agent': 'xxx'
-    }
+下载链接生成的默认筛选参数是：
+ - 按照优先权日期
+ - 仅限专利
+ - 结果以最新优先排序
+
+该程序有两个可指定的参数要运行时传入：
+ - `begin`、`end`：爬取日期范围，包含 begin 和 end 这两天。
+```bash
+python step1_download_requests.py <begin> <end>
+# e.g. python step1_download_requests.py 20210101 20210106
 ```
- - `begin`、`end`：爬取日期范围，包含 begin 和 end 这两天。考虑到这对参数相比别的参数会被更频繁地更改，这对参数有两种设置方法。其他参数因为相对固定，均采用硬编码。
-    - 运行时传入：
-        ```bash
-        python step1_download_requests.py <begin> <end>
-        # e.g. python step1_download_requests.py 20210101 20210106
-         ```
-    - 硬编码：
-        ```python
-        begin = "<begin>"
-        end = "<end>"
-        # e.g. 
-        # begin = "20210101"
-        # end = "20210106"
-        ```
+
+该程序其他可指定的硬编码参数在 `config.py` 的 `# step1` 部分：
+```python
+# step1
+download_path = 'xxx'
+countrys = ["CN"] # , "US"
+cookie = 'xxx'
+user_agent = 'xxx'
+```
  - `download_path`：csv 文件下载存储路径。（csv 文件名是自动生成的 `日期-国家.csv`。）
  - `countrys`：计划爬取的国家列表，可以添加其他国家的简称（e.g. US）以爬取更多的国家的专利数据。
- - `headers`：请求头信息。
-   - `cookie`：Cookie。当程序因为 429 封禁终止时，需要更换一个新的有效的 Cookie 才可以继续爬取。新的 Cookie 可以手动通过浏览器访问下载地址时通过 F12 开发者页面抓请求头的包复制获得。如果手动访问也 429 的话，就找同事帮忙提供一下他们的 Cookie。一般情况下 1 个 Cookie 使用到 429 封禁之前可以爬取 1 个国家将近 1 年份的数据。
-   - `user-agent`：浏览器客户端类型。该参数基本不需要改动。
-
----
-### step1_download_selenium.py
-
-step1_download_requests.py 的早期 selenium 实现版本，因无法绕过 429 封禁且无法在命令行服务器上调试被 step1_download_requests.py 替代而弃用停止维护。此文件仅作留档，以备个人未来参考。
+ - `cookie`：请求头的Cookie。当程序因为 429 封禁终止时，需要更换一个新的有效的 Cookie 才可以继续爬取。新的 Cookie 可以手动通过浏览器访问下载地址时通过 F12 开发者页面抓请求头的包复制获得。如果手动访问也 429 的话，就找同事帮忙提供一下他们的 Cookie。一般情况下 1 个 Cookie 使用到 429 封禁之前可以爬取 1 个国家将近 1 年份的数据。
+ - `user-agent`：请求头的浏览器客户端类型。该参数基本不需要改动。
 
 ---
 ### step2_analysis_web_only.py
@@ -185,36 +171,38 @@ step1_download_requests.py 的早期 selenium 实现版本，因无法绕过 429
 
 该程序已通过 logging 实现轮转日志，日志存储于相对路径 `/log/` 文件夹下。每个线程对应一个日志文件，其后缀数字为 `10 * pid + tid` 。（后缀数字是指 `.log` 之前的数字， `.log` 之后的是轮转日志备份编号）
 
-在文件开头的 `# Arguments` 的部分可以看到该程序可以指定的参数：
+该程序可指定的参数在 `config.py` 的 `# step2` 部分：
 ```python
-input_folder_path = 'xxx'   # path to folder
-output_folder_path = 'xxx' 
-n_thread = 4
-n_processes = 8
+# step2
+step2_input_folder_path = 'xxx'   # path to folder
+step2_output_folder_path = 'xxx'
+step2_n_threads = 1
+step2_n_processes = 1
 ```
- - `input_folder_path`: 原始 csv 文件的存储路径。程序将从这个文件夹中逐个读取 csv 文件进行爬取分析。
- - `output_folder_path`：结果临时 csv 文件的存储路径。程序将把分析完后生成的临时 csv 文件 `日期-国家-common.csv` 和 `日期-国家-cite.csv` 存储到该路径下。
- - `n_thread`：并行参数，每个进程的线程数。
- - `n_processes`：并行参数，该程序的进程数。
-
+ - `step2_input_folder_path`: 原始 csv 文件的存储路径。程序将从这个文件夹中逐个读取 csv 文件进行爬取分析。
+ - `step2_output_folder_path`：结果临时 csv 文件的存储路径。程序将把分析完后生成的临时 csv 文件 `日期-国家-common.csv` 和 `日期-国家-cite.csv` 存储到该路径下。
+ - `step2_n_threads`：并行参数，每个进程的线程数。
+ - `step2_n_processes`：并行参数，该程序的进程数。
+  
 ---
 ### step2_analysis_db_web_fast.py
 
 该程序是 `step2_analysis_web_only.py` 的需求特化加速版本，适用于重新爬取分析的场合，即：当完成一轮 step 1 - 3 之后，爬取需求从 `按申请日期` 变更为 `按优先权日期`。一般而言这需要重新跑一轮 step 1 - 3，但 step 2 是非常耗时的，分析三年的数据要数十个小时。考虑到两个需求中有大部分数据是重合的，且 step 2 最耗时的部分是访问网页，更改爬取详情页部分的逻辑为：优先比对数据库，若数据库已有该条数据，则从数据库拷贝，若数据库不存在该数据，再去访问详情页。
 
-为了减少对数据库的访问次数，降低数据库负载：每分析一个原始 csv 文件，从数据库拉取一次当天的 common 数据存入字典；程序运行时，一次性拉取全部 cite 数据存入字典。后续比对使用字典。（common 总数据约 750w 条，cite 总数据约 69w 条）
+为了减少对数据库的访问次数，降低数据库负载：每分析一个原始 csv 文件，从数据库拉取一次当天的 common 数据存入字典；程序运行时，一次性拉取全部 cite 数据存入字典。后续比对使用字典。（截至撰写该文档时，common 总数据约 750w 条，cite 总数据约 69w 条）
 
 **注意**：如果要使用该程序，一定要根据使用时的需求，个性化修改 `db2dict_common(date_str)` 和 `db2dict_cite()` 方法里的 sql 语句。
 
-该程序的其他参数设置和 `step2_analysis_web_only.py` 完全一致，不再赘述。
+该程序的其他参数设置以及其他特点和 `step2_analysis_web_only.py` 完全一致，不再赘述。
 
 ---
 ### split.py
 
-该程序是一个文件分类小工具，它可以把存在一个文件夹里的不同后缀的临时 csv 文件分类转移到两个文件夹里，以便于使用 `step3_warehouse.py`。
+该程序是一个文件分类小工具，它可以把存在一个文件夹里的不同后缀的临时 csv 文件分类转移到两个文件夹里，以便于使用 `step3_warehouse.py`。当然如果文件不多，手动分类，就不需要用这个小工具。
 
-在文件开头的 `# Arguments` 的部分可以看到该程序可以指定的参数：
+该程序可指定的参数在 `config.py` 的 `# split` 部分：
 ```python
+# split
 src_dir = "xxx"
 dst_dir_a = "xxx"
 dst_dir_b = "xxx"
@@ -233,10 +221,11 @@ dst_dir_b = "xxx"
 
 如果录入重复数据的悲剧发生了，可以按照 `bopu_update_time` 批量删除数据。
 
-在文件开头的 `# Arguments` 的部分可以看到该程序可以指定的参数：
+该程序可指定的参数在 `config.py` 的 `# step3` 部分：
 ```python
-folders_common = ['xxx', 'xxx', 'xxx']
-folders_cite = ['xxx', 'xxx', 'xxx']
+# step3
+folders_common = ['xxx']
+folders_cite = ['xxx']
 ```
  - `folders_common`：存有 common 数据的临时 csv 文件所在的文件夹列表。
  - `folders_cite`：存有 cite 数据的临时 csv 文件所在的文件夹列表。
@@ -250,7 +239,8 @@ folders_cite = ['xxx', 'xxx', 'xxx']
 
 **注意**：如果爬取国家发生变化，此处检查的条件也应当相应变更，注意修改主程序里的 `query_cited_by_id` 以满足需求。
 
-该程序无需参数，输出结果在当前文件夹的 `output.txt` 。
+该程序无需参数直接运行，输出结果在当前文件夹的 `output.txt` 。
+
 
 ---
 ### step5_replenish.py
@@ -263,13 +253,14 @@ folders_cite = ['xxx', 'xxx', 'xxx']
 
 因为数据是通过搜索引擎收集的，而搜索引擎因为性能限制和受众特点只保证返回 “大量” 符合条件的相关数据以供来浏览，不保证返回 “全部” 符合条件的数据。甚至不同的时间用相同的 url 拉取到的数据都不一样。故 step 1 下载的不可能是完整的数据，进而 step 4 的第二个完整性检查往往无法通过，于是 step 5 由此而生。`数据补全的过程就是重复 step 3 - 5，直到 step 4 检查通过（无法再往数据库中增补数据）`。好消息是实验结果是这个循环是可以收敛的。
 
-在文件开头的 `# Arguments` 的部分可以看到该程序可以指定的参数：
+该程序可指定的参数在 `config.py` 的 `# step5` 部分：
 ```python
-output_folder_path = 'xxx'
-n_threads = 8
+# step 5
+step5_output_folder_path = 'xxx'
+step5_n_threads = 1
 ```
- - `output_folder_path`：输出临时 csv 文件存储路径。
- - `n_threads`：并行参数，线程数。
+ - `step5_output_folder_path`：输出临时 csv 文件存储路径。
+ - `step5_n_threads`：并行参数，线程数。
 
 ---
 ### step6_linker.py
@@ -278,25 +269,27 @@ n_threads = 8
 
 该程序使用了轮转日志和多进程加速，每个进程对应一个日志文件，日志文件在相对路径 `/log/` 文件夹下，后缀数字为 `pid`。
 
-在文件开头的 `# Arguments` 的部分可以看到该程序可以指定的参数：
+该程序可指定的参数在 `config.py` 的 `# step6` 部分：
 ```python
-output_path = 'xxx'
-n_processes = 8
+# step 6
+step6_output_folder_path = 'xxx'
+step6_n_threads = 1
 ```
- - `output_path`：输出临时 csv 文件存储路径。
- - `n_processes`：并行参数，进程程数。
+ - `step6_output_folder_path`：输出临时 csv 文件存储路径。
+ - `step6_n_threads`：并行参数，进程程数。
 
 ---
 ### step7_store_linker.py
 
 该程序将 `线程负责范围.csv` 临时 csv 文件里的 `A股上市公司代码` 转化成 `bopu_symbol`，并把 `patent_id - bopu_symbol` 入库至 `google_patent_symbol` 数据表。
 
-在文件开头的 `# Arguments` 的部分可以看到该程序可以指定的参数：
+该程序可指定的参数在 `config.py` 的 `# step7` 部分：
 ```python
-folders_linker = ['/home/swl/bopu/result_l']
+# step 7
+folders_linker = ['xxx']
 ```
  - `folders_linker`：存储 step 6 输出临时 csv 文件的文件夹。
 
-
+ 
 ## 有其他相关问题请联系
 1067147135@qq.com（石雯岚）

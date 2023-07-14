@@ -1,20 +1,14 @@
+import config
+from utils.db_helper import fix
+
 import os
 import csv
 import codecs
+import base64
 from clickhouse_driver import Client
 
 # Arguments
-folders_linker = ['xxx']
-
-def fix(string):
-    special_characters = ["\\", "'", "\"", "\0", "\b", "\n", "\r", "\t", "\Z", "\%", "\_"]
-    # 需要转义的特殊字符列表
-
-    for character in special_characters:
-        if character in string:
-            string = string.replace(character, "\\" + character)  # 加上转义符进行替换
-
-    return string
+folders_linker = config.folders_linker
 
 def trans_single(string):
     trans_dict = {'SZ': 'SZSE', 'SH': 'SSE', 'BJ': 'BSE'}
@@ -29,7 +23,8 @@ def trans_group(string):
     return ", ".join(res)
 
 if __name__ == '__main__':
-    client = Client(host='xx.xx.x.xx', port='xxx', database='xxx', user='xxx', password='xxx')
+    client = Client(host=config.host22, port=config.port22, database=config.database22, user=config.user22, password=base64.b64decode(config.password22).decode('utf-8'))
+
     # insert linker
     for folder in folders_linker:
         file_names = os.listdir(folder)   # read all file names
@@ -38,7 +33,7 @@ if __name__ == '__main__':
             with codecs.open(file_path, "r", "utf-8") as f:
                 reader = csv.reader(f)
                 data = list(reader)[1:]
-                query = 'INSERT INTO xxx.google_patent_symbol (* EXCEPT(bopu_update_time)) VALUES'
+                query = 'INSERT INTO his_data_snaps.google_patent_symbol (* EXCEPT(bopu_update_time)) VALUES'
                 query += ','.join([f"('{fix(row[0])}', '{fix(trans_group(row[1]))}')" for row in data])
                 client.execute(query)
                 print("finish", file_path)
