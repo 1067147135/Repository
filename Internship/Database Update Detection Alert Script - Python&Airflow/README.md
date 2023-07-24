@@ -40,7 +40,7 @@ python 模块：
   - xxx
 
 
-### wind_db_check_alert.py
+### his_bopu_db_check.py
 
 #### xx.xx.x.72 数据库
 - **his_bopu**: 
