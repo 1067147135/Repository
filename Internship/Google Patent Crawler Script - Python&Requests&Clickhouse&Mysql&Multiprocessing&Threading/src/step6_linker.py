@@ -32,15 +32,14 @@ def contains_digit(s):
     match = re.search(pattern, s)
     return match is not None
 
-def split_assignee2(string):
+def split_assignee(string):
     """
-    【弃用】当存在多个assignee的时候进行切分 -> list
+    当存在多个assignee的时候进行切分 -> list
+    英文转小写版本
     """
     res = []
     if has_chinese(string):
         # Company name in Chinese
-        string = string.replace('股份有限公司', '')
-        string = string.replace('有限公司', '')
         string = string.replace('（Cn）', '')
         string = string.replace('（', '(')
         string = string.replace('）', ')')
@@ -48,66 +47,30 @@ def split_assignee2(string):
         res = string.split(", ")
         
     else:
-        # print('hello')
         # Company name in English
         string = string.lower().strip()
-        string = string.replace('co ltd', '')
-        string = string.replace('co., ltd.', '')
-        string = string.replace('co.,ltd', '')
-        string = string.replace('co', '')
-        string = string.replace('ltd', '')
+        
         string = string.replace(', inc.', '')
         string = string.replace(', inc', '')
         string = string.replace(', llc', '')
         string = string.replace(', n.a.', '')
         string = string.replace(', ltd.', '')
         string = string.replace(', l.p.', '')
+        string = string.replace(' co., ltd.', '')
+        string = string.replace(' co., ltd', '')
+        string = string.replace(' co.,ltd.', '')
+        string = string.replace(' co.,ltd', '')
+        string = string.replace(' co, ltd.', '')
+        string = string.replace(' co, ltd', '')
 
         res = string.split(", ")
-        
-    for ele in res:
-        ele = ele.strip()
-    return res
-
-def split_assignee(string):
-    """
-    当存在多个assignee的时候进行切分 -> list
-    """
-    res = []
-    if has_chinese(string):
-        # Company name in Chinese
-        # string = string.replace('股份有限公司', '')
-        # string = string.replace('有限公司', '')
-        string = string.replace('（Cn）', '')
-        string = string.replace('（', '(')
-        string = string.replace('）', ')')
-
-        res = string.split(", ")
-        
-    else:
-        # print('hello')
-        # Company name in English
-        string = string.replace('Corp', '')
-        string = string.replace('CO Ltd', '')
-        string = string.replace('Co ltd', '')
-        string = string.replace('Co Ltd', '')
-        string = string.replace('Co., Ltd.', '')
-        string = string.replace('Co., Ltd', '')
-        string = string.replace('Co.,Ltd', '')
-        string = string.replace('Co', '')
-        string = string.replace('Ltd', '')
-        string = string.replace(', Inc.', '')
-        string = string.replace(', Inc', '')
-        string = string.replace(', Llc', '')
-        string = string.replace(', LLC', '')
-        string = string.replace(', N.A.', '')
-        string = string.replace(', Ltd.', '')
-        string = string.replace(', L.P.', '')
-
-        res = string.split(", ")
-        
-    for ele in res:
-        ele = ele.strip()
+    for i in range(len(res)):
+        res[i] = res[i].replace(' corp', '')
+        res[i] = res[i].replace(' co.ltd.', '')
+        res[i] = res[i].replace(' co ltd', '')
+        res[i] = res[i].replace(' co', '')
+        res[i] = res[i].replace(' ltd', '')
+        res[i] = res[i].strip()
     return res
 
 def generate_chunks(n, k):
@@ -134,6 +97,26 @@ def save(ids, codes, chunk):
     file_name = os.path.join(output_path, str(chunk[0]) + "-" + str(chunk[1]) + '.csv')
     df.to_csv(file_name, index=False, encoding='utf-8')
 
+def choose(target, keys):
+    if ('university' in target) or ('大学' in target):
+        for key in keys:
+            # print(key)
+            if target == split_assignee(key)[0]:
+                return key
+        return ''
+    if (len(target) < 5) and has_chinese(target):
+        return ''    
+
+    candidate = ''
+    lenth = 1e9
+    for key in keys:
+        # print(key)
+        if target in key:
+            if (len(key) < lenth):
+                candidate = key
+                lenth = len(candidate)
+    return candidate
+
 def worker(pid, chunk, id_list, ass_list, des_dict):
     logging.basicConfig()
     logger = logging.getLogger(f'logger{pid}')
@@ -157,29 +140,18 @@ def worker(pid, chunk, id_list, ass_list, des_dict):
             res = []
             # print(eles)
             for ele in eles:
-                # print(ele)
-                if ('University' in ele) or ('大学' in ele):
-                    for key in des_dict.keys():
-                        # print(key)
-                        if ele == split_assignee(key)[0]:
-                            cnt = str(datetime.datetime.now()) + ": " + ele + " <-> " + key + ": " + des_dict[key] + " (" + str(count) + " / " + str(total) + ")"
-                            logger.info(cnt)
-                            res.append(des_dict[key])
-                            break
-                else: 
-                    for key in des_dict.keys():
-                        # print(key)
-                        if ele in key:
-                            cnt = str(datetime.datetime.now()) + ": "  + ele + " <-> " + key + ": " + des_dict[key] + " (" + str(count) + " / " + str(total) + ")"
-                            logger.info(cnt)
-                            res.append(des_dict[key])
-                            break
+                tmp = choose(ele, des_dict.keys())
+                if tmp != '':
+                    cnt = str(datetime.datetime.now()) + ": " + id + " | " + ele + " <-> " + tmp + ": " + des_dict[tmp][0] + " (" + str(count) + " / " + str(total) + ")"
+                    logger.info(cnt)
+                    res.append(des_dict[tmp][0])
+                    # print(key)
             if res:
                 count += 1
                 ids.append(id)
                 codes.append(", ".join(res))
-                print(ids)
-                print(codes)
+                # print(ids)
+                # print(codes)
             
         except Exception as e:
             cnt = str(datetime.datetime.now()) + ": "  + "error occured:" + str(e) 
@@ -214,17 +186,20 @@ if __name__ == '__main__':
 
     conn = pymysql.connect(host=config.host70, user=config.user70, password=base64.b64decode(config.password70).decode('utf-8'), database=config.database70)
    
-    query_des = "select S_INFO_COMPNAME, S_INFO_COMPNAMEENG, S_INFO_WINDCODE from wind_db.asharedescription"
+    query_des = "select S_INFO_WINDCODE, S_INFO_COMPNAME, S_INFO_COMPNAMEENG, S_INFO_LISTDATE from wind_db.asharedescription where (S_INFO_WINDCODE not like 'A%') and (S_INFO_LISTDATE is not null) and (S_INFO_NAME not like '%(IPO终止)') and (S_INFO_NAME not like '%(退市)')"
     df_des = pd.read_sql(query_des, con=conn)
     desc_dict = {}
     for i in range(len(df_des)):
-        compname = df_des.iloc[i, 0]
-        compname_eng = df_des.iloc[i, 1]
-        windcode = df_des.iloc[i, 2]
+        compname = df_des.iloc[i, 1]
+        compname_eng = df_des.iloc[i, 2]
+        windcode = df_des.iloc[i, 0]
+        listdate = df_des.iloc[i, 3]
         if compname is not None:
-            desc_dict[compname] = windcode
+            if compname not in desc_dict.keys() or desc_dict[compname_eng.lower().strip()][1] < listdate:
+                desc_dict[compname] = (windcode, listdate)
         if compname_eng is not None:
-            desc_dict[compname_eng] = windcode
+            if compname_eng not in desc_dict.keys() or desc_dict[compname_eng.lower().strip()][1] < listdate:
+                desc_dict[compname_eng.lower().strip()] = (windcode, listdate)
     conn.close()
     shared_des_dict = manager.dict(desc_dict)
 
