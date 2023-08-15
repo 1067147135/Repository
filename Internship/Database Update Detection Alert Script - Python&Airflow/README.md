@@ -61,6 +61,16 @@ python 模块：
   - xxx
   - xxx
 
+### 70_db_check.py
+
+#### xx.xx.x.70 数据库
+  - xxx
+  - xxx
+  - xxx
+  - xxx
+  - xxx
+  - xxx
+
 ## 项目实现的核心函数
 - **send_alert**(db_name_list, old_list, new_list):
   - 向企业微信机器人发送告警信息
@@ -80,16 +90,42 @@ python 模块：
 
 - **check_db_updated_1730**()，**check_db_updated_2030**()，**check_db_updated_2200**()：
   - 查询数据库更新维护情况，17：30 批次、20：30 批次、22：00 批次
+  
+- **check_70_db_updated_0840**()，**check_70_db_updated_1730**()，**check_70_db_updated_2030**()：
+  - 查询 **70_db_check.py** 的 70 数据库更新维护情况，8：40 批次、17：30 批次、20：30 批次
 
 ## 检查时间
-- 数据库检查有三批，分别是每个交易日的 17：30 批次、20：30 批次、22：00 批次。每个批次由一个 DAG 负责。其中
+- **wind_db_check_alert.py** 和 **his_bopu_db_check.py** 的数据库检查有三批，分别是每个交易日的 17：30 批次、20：30 批次、21：00 批次。每个批次由一个 DAG 负责。其中
   - 17：30 批次包含 tdb_min 数据库下列出的的数据表，对应 **tdb_min_check_1730**
   - 20：30 批次包含 his_bopu 数据库和 bdf_backfill 数据库下列出的数据表，对应**his_bopu_check_2030**
   - 22：00 批次包含 daily_db 数据库下列出的的数据表，对应 **daily_db_check_2200**
-- xxx_x 数据表为半夜更新，统一在下一个交易日的 20：30 批次检查上一个交易日数据的录入情况。
+  - xxx_x 数据表为半夜更新，统一在下一个交易日的 20：30 批次检查上一个交易日数据的录入情况。
+- **70_db_check.py** 的 70 数据库检查有三批，分别是每个交易日的8：40 批次、17：30 批次、20：30 批次。每个批次由一个 DAG 负责。其中
+  - 8：40 批次（对应 **db_70_check_0840**）包含：
+    - xxx
+    - xxx
+    - xxx
+  - 17：30 批次（对应 **db_70_check_1730**）包含：
+    - xxx
+    - xxx
+    - xxx
+  - 20：30 批次（对应 **db_70_check_2030**）包含：
+    - xxx
+    - xxx
+    - xxx (仅这张数据表检查到的最新数据日期应当是下一个交易日，其他都应当是当天)
+
 
 ## 如何拓展
-- 先对照下表，如果有信息完全吻合的，可以在对应 list 添加数据表的名称：
+1. 该项目的相关环境部署路径为：  
+
+    环境 | IP | 项目路径 | UI界面地址
+    --- | --- | --- | --- 
+    测试环境 | xx.xx.x.xx | /path/to/test/dags/personal_folder/ | http://xx.xx.x.xx:8080/home
+    正式环境 | xx.xx.x.xx | /path/to/formal/dags/personal_folder/ | http://xx.xx.x.xx:8080/home
+
+    数据库地址账号以及webhook地址在 `my_config.py`，数据库密码使用 base64 加密。
+
+2. 先对照下表，如果有信息完全吻合的，可以在 **wind_db_check_alert.py** 和 **his_bopu_db_check.py** 的对应 list 添加数据表的名称：
 
     list名称 | 检查批次 | 数据库IP | 数据库类型 | 商品类型 | 重试次数（间隔1小时）
     --- | --- | --- | --- | --- | ---
@@ -103,7 +139,28 @@ python 模块：
     `tables_bdf_backfill = ['xxx', 'xxx']`  
     添加后：
     `tables_bdf_backfill = ['xxx', 'xxx', 'xxx_xx']`
-- 如果都不符合，建议参考：
+3. 再对照下表， 如果有信息完全吻合的，可以在 **70_db_check.py** 的对应 list 添加格式为 `(db.table name, time coloum, stock/future)` （要在期货交易日检查时 stock/future 为 "f"，要在现货交易日检查时 stock/future 为 "s"）的 tuple：
+    list名称 | 检查批次 | 数据库IP | 数据库类型 | 重试次数（间隔半小时）
+    --- | --- | --- | --- | --- 
+    pair_0840 | 8: 40 | xx.xx.x.70 | MySQL | 2
+    pair_1730 | 17: 30 | xx.xx.x.70 | MySQL | 2
+    pair_2030 | 20: 30 | xx.xx.x.70 | MySQL | 2
+  - e.g. 如果想添加对数据表 common_info.notice 每个现货交易日 8：40 的数据更新检查，更新时间以 date 列为准，可以直接在 pair_0840 里添加 `("common_info.notice", "date", "s")`。  
+    添加前：
+    ```python
+    pair_0840 = [("xxx.xxx", "update_date", "s"), 
+                ("xxx.xxx", "trade_date", "f")]
+    ```
+    
+    添加后：
+    ```python
+    pair_0840 = [("xxx.xxx", "update_date", "s"), 
+                ("xxx.xxx", "trade_date", "f"), 
+                ("xxx.xxx", "date", "s")]
+    ```
+
+
+- 如果都不符合，可以在测试环境的 `/path/to/test/dags/personal_folder` 目录下和正式环境的 `/path/to/formal/dags/personal_folder/` 目录下新建自己的文件夹，再在文件夹里参参照如下模板新建 DAG 文件：
     ```python
     # 要检查的数据库和数据表
     tables_xxx = ["xxx", "xxx"]
@@ -182,8 +239,18 @@ python 模块：
 
     ```
 - 其他函数继承使用。(注意 send_alert() 里的具体告警信息应当个性化定制) 
-- 将文件传到 root@xx.xx.x.53/home/airflow/airflow/dags/IT_group 下自己的文件夹下。  
-- 到 http://xx.xx.x.53:8080/home 确认结果。
+- 新建 DAG 文件完成后到测试环境 http://10.25.2.93:8080/home 和正式环境 http://10.25.2.53:8080/home 确认结果，UI 界面的 DAG 会热更新，把最左边的按钮往右扳就能激活 DAG，Action 列的三角形可以手动 trigger DAG。
+
+## 避坑指南
+- 正式环境里的 DAG 文件不能包含任何中文，包括注释，否则 UI 界面的 DAG 会热更新失败。
+- Airflow 执行 Python 文件时的依赖路径和直接执行 Python 文件时的依赖路径不一样，调用自己写的包（如 `my_config.py`）会出现 `ModuleNotFoundError`，可以参照如下代码在 Python 文件里添加依赖路径。
+  ```python
+  import os
+  import sys
+  my_module_path = os.path.abspath('/path/to/my_config.py')
+  sys.path.append(os.path.dirname(my_module_path))
+  import my_config
+  ```
 
 ## 有其他相关问题请联系
 1067147135@qq.com（石雯岚）

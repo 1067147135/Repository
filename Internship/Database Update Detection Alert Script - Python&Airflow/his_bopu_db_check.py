@@ -1,3 +1,10 @@
+import os
+import sys
+my_module_path = os.path.abspath('/path/to/my_config.py')
+sys.path.append(os.path.dirname(my_module_path))
+import my_config
+import base64
+
 import pandas as pd
 import pymysql
 from clickhouse_driver import Client
@@ -20,7 +27,7 @@ def send_alert(db_name_list, old_list, new_list, retry):
     # 构造消息体
     cnt = "[{}][maintainer:swl]: The database is not updated today! (Retry: {}) Details are as follows\n\n".format(datetime.datetime.now(), retry)
     for i in range(len(db_name_list)):
-        cnt += "Table: {} \n Updated trade_date: {} \n Current trade_date: {} \n---\n".format(db_name_list[i], old_list[i], new_list[i])
+        cnt += "Table: {} \nUpdated trade_date: {} \nCurrent trade_date: {} \n---\n".format(db_name_list[i], old_list[i], new_list[i])
     
     msg = {
         "msgtype": "markdown",
@@ -30,7 +37,7 @@ def send_alert(db_name_list, old_list, new_list, retry):
     }
 
     # 发送请求
-    webhook = "https://qyapi.weixin.qq.com/xxx"
+    webhook = f"https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key={my_config.webhook}"
 
     response = requests.post(
         url=webhook, 
@@ -47,14 +54,14 @@ def send_alert(db_name_list, old_list, new_list, retry):
 
 # 检查今天是否为期货交易日
 def check_future_date(day):
-    conn = pymysql.connect(host='xx.xx.x.70', user='xxx', password='xxx', database='xxx')
+    conn = pymysql.connect(host=my_config.host70, user=my_config.user70, password=base64.b64decode(my_config.password70).decode('utf-8'))
     query = "SELECT TRADE_DAYS FROM xxx.cfuturescalendar WHERE TRADE_DAYS = {} limit 1;".format(day.strftime("%Y%m%d"))
     df = pd.read_sql(query, con=conn)
     conn.close() 
     return not df.empty
 
 def check_stock_date(day):
-    conn = pymysql.connect(host='xx.xx.x.70', user='xxx', password='xxx', database='xxx')
+    conn = pymysql.connect(host=my_config.host70, user=my_config.user70, password=base64.b64decode(my_config.password70).decode('utf-8'))
     query = "SELECT TRADE_DAYS FROM xxx.asharecalendar WHERE TRADE_DAYS = {} limit 1;".format(day.strftime("%Y%m%d"))
     df = pd.read_sql(query, con=conn)
     conn.close() 
@@ -75,7 +82,7 @@ def check_db_updated_2030():
 
     if check_future_date(datetime.date.today()):
         # 检查除了limao数据表的期货期权数据表
-        client = Client(host='xx.xx.x.72', port='9000', user='xxx', database='xxx', password='read_only')
+        client = Client(host=my_config.host72, port=my_config.port72, user=my_config.user72, password=base64.b64decode(my_config.password72).decode('utf-8'))
         target = datetime.date.today()
         for table in tables_future:
             query = "SELECT max(trade_date) from his_bopu.{};".format(table)
@@ -101,7 +108,7 @@ def check_db_updated_2030():
 
     if check_stock_date(datetime.date.today()):
         # 检查股票数据表
-        client = Client(host='xx.xx.x.72', port='9000', user='xxx', database='xxx', password='xxx')
+        client = Client(host=my_config.host72, port=my_config.port72, user=my_config.user72, password=base64.b64decode(my_config.password72).decode('utf-8'))
         target = datetime.date.today()
         for table in tables_stock:
             query = "SELECT max(trade_date) from his_bopu.{};".format(table)
@@ -113,7 +120,7 @@ def check_db_updated_2030():
                 new_list.append(target) 
         client.disconnect() 
 
-        client = Client(host='xx.xx.x.52', port='9000', user='xxx', database='xxx', password='xxx')     
+        client = Client(host=my_config.host52, port=my_config.port52, user=my_config.user52, password=base64.b64decode(my_config.password52).decode('utf-8'))  
         target = datetime.date.today()
         for table in tables_bdf_backfill:
             query = "SELECT max(trade_date) from bdf_backfill.{};".format(table)

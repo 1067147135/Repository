@@ -1,3 +1,10 @@
+import os
+import sys
+my_module_path = os.path.abspath('/path/to/my_config.py')
+sys.path.append(os.path.dirname(my_module_path))
+import my_config
+import base64
+
 import pandas as pd
 import pymysql
 import datetime
@@ -22,7 +29,7 @@ def send_alert(db_name_list, old_list, new, retry):
     # 构造消息体
     cnt = "[{}][maintainer:swl]: The database is not updated today! (Retry: {}) Details are as follows\n\n".format(datetime.datetime.now(), retry)
     for i in range(len(db_name_list)):
-        cnt += "Table: {} \n Updated trade_date: {} \n Current trade_date: {} \n---\n".format(db_name_list[i], old_list[i], new)
+        cnt += "Table: {} \nUpdated trade_date: {} \nCurrent trade_date: {} \n---\n".format(db_name_list[i], old_list[i], new)
     
     msg = {
         "msgtype": "markdown",
@@ -32,7 +39,7 @@ def send_alert(db_name_list, old_list, new, retry):
     }
 
     # 发送请求
-    webhook = "https://qyapi.weixin.qq.com/xxx"
+    webhook = f"https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key={my_config.webhook}"
 
     response = requests.post(
         url=webhook, 
@@ -49,7 +56,7 @@ def send_alert(db_name_list, old_list, new, retry):
 
 # 查询数据库更新维护情况(22:00批次)
 def check_db_updated_2200():
-    conn = pymysql.connect(host='xx.xx.x.70', user='xxx', password='xxx', database='xxx')
+    conn = pymysql.connect(host=my_config.host70, user=my_config.user70, password=base64.b64decode(my_config.password70).decode('utf-8'))
     db_name_list = [] 
     old_list = []
 
@@ -71,7 +78,7 @@ def check_db_updated_2200():
 
 # 查询数据库更新维护情况(17:30批次)
 def check_db_updated_1730():
-    conn = pymysql.connect(host='xx.xx.x.70', user='xxx', password='xxx', database='xxx')
+    conn = pymysql.connect(host=my_config.host70, user=my_config.user70, password=base64.b64decode(my_config.password70).decode('utf-8'))
     db_name_list = [] 
     old_list = []
 
@@ -93,7 +100,7 @@ def check_db_updated_1730():
 
 # 检查今天是否为期货交易日
 def check_date(day):
-    conn = pymysql.connect(host='xx.xx.x.70', user='xxx', password='xxx', database='xxx')
+    conn = pymysql.connect(host=my_config.host70, user=my_config.user70, password=base64.b64decode(my_config.password70).decode('utf-8'))
     query = "SELECT TRADE_DAYS FROM xxx.cfuturescalendar WHERE TRADE_DAYS = {} limit 1;".format(day.strftime("%Y%m%d"))
     df = pd.read_sql(query, con=conn)
     conn.close() 
