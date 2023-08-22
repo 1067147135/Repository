@@ -115,7 +115,7 @@ def index_eod_prices_update():
     client.disconnect()
     if not_updated: 
         retry_count = round((datetime.datetime.now() - datetime.datetime.now().replace(hour=5, minute=0, second=0, microsecond=0)).total_seconds() / 3600)
-        send_alert(not_updated, f"{retry_count}/3")
+        send_alert(not_updated, f"{retry_count}/3", logger)
         raise AirflowException(f"Fail to update his_global.index_eod_prices. Retry: {retry_count}/3.")
 
 # index_eod_prices_update()
