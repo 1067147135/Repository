@@ -120,8 +120,8 @@ python 模块：
 
     环境 | IP | 项目路径 | UI界面地址
     --- | --- | --- | --- 
-    测试环境 | xx.xx.x.xx | /path/to/test/dags/personal_folder/ | http://xx.xx.x.xx:8080/home
-    正式环境 | xx.xx.x.xx | /path/to/formal/dags/personal_folder/ | http://xx.xx.x.xx:8080/home
+    测试环境 | xx.xx.x.xx | $AIRFLOW_HOME/dags/path/to/personal_folder/ | http://xx.xx.x.xx:8080/home
+    正式环境 | xx.xx.x.xx | $AIRFLOW_HOME/dags/path/to/personal_folder/ | http://xx.xx.x.xx:8080/home
 
     数据库地址账号以及webhook地址在 `my_config.py`，数据库密码使用 base64 加密。
 
@@ -160,7 +160,7 @@ python 模块：
     ```
 
 
-- 如果都不符合，可以在测试环境的 `/path/to/test/dags/personal_folder` 目录下和正式环境的 `/path/to/formal/dags/personal_folder/` 目录下新建自己的文件夹，再在文件夹里参参照如下模板新建 DAG 文件：
+- 如果都不符合，可以在测试环境的 `$AIRFLOW_HOME/dags/path/to/personal_folder/` 目录下和正式环境的 `$AIRFLOW_HOME/dags/path/to/personal_folder/` 目录下新建自己的文件夹，再在文件夹里参参照如下模板新建 DAG 文件：
     ```python
     # 要检查的数据库和数据表
     tables_xxx = ["xxx", "xxx"]
@@ -239,7 +239,7 @@ python 模块：
 
     ```
 - 其他函数继承使用。(注意 send_alert() 里的具体告警信息应当个性化定制) 
-- 新建 DAG 文件完成后到测试环境 http://10.25.2.93:8080/home 和正式环境 http://10.25.2.53:8080/home 确认结果，UI 界面的 DAG 会热更新，把最左边的按钮往右扳就能激活 DAG，Action 列的三角形可以手动 trigger DAG。
+- 新建 DAG 文件完成后到测试环境 http://xx.xx.x.xx:8080/home 和正式环境 http://xx.xx.x.xx:8080/home 确认结果，UI 界面的 DAG 会热更新，把最左边的按钮往右扳就能激活 DAG，Action 列的三角形可以手动 trigger DAG。
 
 ## 避坑指南
 - 正式环境里的 DAG 文件不能包含任何中文，包括注释，否则 UI 界面的 DAG 会热更新失败。
@@ -247,7 +247,7 @@ python 模块：
   ```python
   import os
   import sys
-  my_module_path = os.path.abspath('/path/to/my_config.py')
+  my_module_path = os.path.abspath('$AIRFLOW_HOME/dags/path/to/personal_folder/my_config.py')
   sys.path.append(os.path.dirname(my_module_path))
   import my_config
   ```

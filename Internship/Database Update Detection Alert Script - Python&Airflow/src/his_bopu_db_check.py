@@ -1,6 +1,6 @@
 import os
 import sys
-my_module_path = os.path.abspath('/path/to/my_config.py')
+my_module_path = os.path.abspath('$AIRFLOW_HOME/dags/path/to/personal_folder/my_config.py')
 sys.path.append(os.path.dirname(my_module_path))
 import my_config
 import base64
