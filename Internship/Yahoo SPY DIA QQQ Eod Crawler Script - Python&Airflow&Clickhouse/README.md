@@ -5,8 +5,9 @@
 从 [Yahoo finance](https://finance.yahoo.com/) 抓取 SPY，DIA，QQQ这3个美股ETF的日线数据。
 
 ## 项目的基本思路
-- `check_update_time.py` 每隔十分钟访问接口，确认 [Yahoo finance](https://finance.yahoo.com/) 的数据更新时间：北京时间 4 点左右前一天的日线数据基本稳定，北京时间 9 点 15 分左右确定最终日线数据。为了尽早拿到数据，商讨决定北京时间 5 点的时候爬取数据。（程序输出参考 `src/log/log.txt`）
-- `index_eod_prices_update.py` 每周二至周六早上 5 点从 [Yahoo finance](https://finance.yahoo.com/) 抓取 SPY，DIA，QQQ这3个美股ETF的日线数据并入库至 72 Clickhouse 数据库的 his_global.index_eod_prices 数据表。没有抓到数据或者数据入库失败都将触发通过企业微信 bot 发送的告警，并在 1 小时后重试，最多重试 3 次。（程序日志参考 `src/log/index_eod_prices_update_0500.log`）
+- `check_update_time.py` 从下一个午夜开始，每隔十分钟访问接口，前期用于监控 [Yahoo finance](https://finance.yahoo.com/) 的数据更新时间，用于确定将爬虫任务定时在什么时候执行。（程序输出参考 `src/log/monitor.log`）
+- `index_eod_prices_update.py` 每周二至周六早上 6 点从 [Yahoo finance](https://finance.yahoo.com/) 抓取 SPY，DIA，QQQ这3个美股ETF的日线数据并入库至 72 Clickhouse 数据库的 his_global.index_eod_prices 数据表。没有抓到数据或者数据入库失败都将触发通过企业微信 bot 发送的告警，并在 1 小时后重试，最多重试 2 次。（程序日志参考 `src/log/index_eod_prices_update_0600.log`）
+- `index_eod_prices_check.py` 每周二至周六早上 6 点半检查数据库是否成功录入今天的数据，录入的数据是否一致（最高价最大，最低价最小），未录入数据或者录入数据不一致都会触发通过企业微信 bot 发送的告警。
 - 项目使用的参数全部提取至 `my_config.py` 统一管理。
 
 ## 项目使用的技术栈
@@ -19,17 +20,20 @@ python 模块：
 - airflow （周期性执行更新脚本）
 - logging （轮转日志，在记录运行信息的同时限制 log 的内存占用）
 - base64 （加密数据库密码等敏感信息）
+- schedule  (设定定时执行任务)
 
 
 ## 项目实现的核心函数
-- **send_alert**(etfs, retry, logger): 
-  - 向企业微信机器人发送告警信息
-  - etfs：没有成功爬取入库的美股 list
-  - retry：重试次数
-  - logger：logging handler
-- **index_eod_prices_update**(): 
+- **job_monitor()**：
+  - 通过 schedule 控制，从下一个 0 点开始，每 10 分钟执行一次。
+  - 通过两个途径（网页端使用的 query1 接口，和 yfinance 封装使用的 query2 接口）获取三支 etf 的日线数据，并将数据存到 `/src/log/monitor.log` 以备分析。
+- **index_eod_prices_update()**: 
   - 从 [Yahoo finance](https://finance.yahoo.com/) 抓取 SPY，DIA，QQQ这3个美股ETF的日线数据并入库至 72 Clickhouse 数据库的 his_global.index_eod_prices 数据表。
   - 数据库入库前先做查重。
+  - 如果抓不到数据，或者入库失败，则告警。
+- **index_eod_prices_check()**:
+  - 从 72 Clickhouse 数据库读取前一个交易日的日线数据，检查数据一致性（“开高收低”四个价格应该“高”最大，“低”最小）。
+  - 如果读取不到数据，或者数据不一致，则告警。
 
 ## 涉及数据库的结构 
 
@@ -89,6 +93,7 @@ python 模块：
   ```
 - ReplicatedReplacingMergeTree 会在插入数据的时候进行查重，在索引 (trade_date, symbol) 出现重复的时候用新数据覆盖旧数据，但这个查重操作是异步的，如果在非常短的时间内插入两条索引 (trade_date, symbol) 一样的数据，那这两条数据都会成功入库，产生冗余。
 - 72 数据库环境的 Clickhouse 版本为 20.4.5.36，`insert data in all the columns, except 'b'` 这个功能在 20.11.1.5109 版本才上线（根据Clickhouse github 文档更新版本）所以入库时只能采用指定字段名的方式。
+- log 文件新建出来的时候默认其他用户是只有读取权限没有写入权限的，也就是说 airflow 执行的时候可能会因为 permission denied 无法 a 模式打开 log 文件而执行失败。可以使用 `ls -l` 查看当前文件夹下文件的权限，再使用 `chmod 666 <file_name.log>` 赋予所有用户对这个文件的读写权限。
 
 ## 有其他相关问题请联系
 1067147135@qq.com（石雯岚）

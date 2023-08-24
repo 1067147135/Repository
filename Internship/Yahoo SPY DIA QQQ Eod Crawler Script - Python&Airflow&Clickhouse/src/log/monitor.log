@@ -1,0 +1,781 @@
+The program will run after 32176.804589271545 seconds
+[2023-08-24 00:00:00.256724] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-23 23:59:59
+date: 2023-08-23 				| open: 439.25 	| high: 442.3949890136719 	| low: 439.1000061035156 	| close: 442.2900085449219 	| adjcloses: 442.2900085449219 	| volumn: 24634632
+[2023-08-24 00:00:00.510235] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 442.3949890136719 	| low: 439.1000061035156 	| close: 442.2900085449219 	| volumn: 24634632 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 00:00:00.708915] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-23 23:59:58
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 369.3399963378906 	| low: 364.3699951171875 	| close: 369.197998046875 	| adjcloses: 369.197998046875 	| volumn: 21566004
+[2023-08-24 00:00:00.936970] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 369.3399963378906 	| low: 364.3699951171875 	| close: 369.197998046875 	| volumn: 21566004 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 00:00:01.150256] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-23 23:59:43
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 344.5299987792969 	| low: 343.25 	| close: 344.3999938964844 	| adjcloses: 344.3999938964844 	| volumn: 1179354
+[2023-08-24 00:00:01.452200] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 344.5299987792969 	| low: 343.25 	| close: 344.3999938964844 	| volumn: 1179354 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 00:10:01.769292] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 00:10:00
+date: 2023-08-23 				| open: 439.25 	| high: 442.3949890136719 	| low: 439.1000061035156 	| close: 441.989990234375 	| adjcloses: 441.989990234375 	| volumn: 25362369
+[2023-08-24 00:10:02.019172] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 442.3949890136719 	| low: 439.1000061035156 	| close: 441.9849853515625 	| volumn: 25362519 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 00:10:02.216776] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 00:10:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 369.3399963378906 	| low: 364.3699951171875 	| close: 368.6650085449219 	| adjcloses: 368.6650085449219 	| volumn: 22165535
+[2023-08-24 00:10:02.427339] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 369.3399963378906 	| low: 364.3699951171875 	| close: 368.6700134277344 	| volumn: 22166153 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 00:10:02.691198] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 00:09:57
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 344.5299987792969 	| low: 343.25 	| close: 344.2699890136719 	| adjcloses: 344.2699890136719 	| volumn: 1226945
+[2023-08-24 00:10:02.916837] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 344.5299987792969 	| low: 343.25 	| close: 344.2699890136719 	| volumn: 1226945 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 00:20:03.301448] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 00:20:00
+date: 2023-08-23 				| open: 439.25 	| high: 442.3949890136719 	| low: 439.1000061035156 	| close: 442.0199890136719 	| adjcloses: 442.0199890136719 	| volumn: 26103429
+[2023-08-24 00:20:03.551900] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 442.3949890136719 	| low: 439.1000061035156 	| close: 442.0199890136719 	| volumn: 26103429 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 00:20:03.746340] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 00:20:01
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 369.3399963378906 	| low: 364.3699951171875 	| close: 368.57000732421875 	| adjcloses: 368.57000732421875 	| volumn: 22857911
+[2023-08-24 00:20:03.955588] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 369.3399963378906 	| low: 364.3699951171875 	| close: 368.57000732421875 	| volumn: 22857911 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 00:20:04.168824] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 00:19:39
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 344.5299987792969 	| low: 343.25 	| close: 344.24169921875 	| adjcloses: 344.24169921875 	| volumn: 1273363
+[2023-08-24 00:20:04.385659] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 344.5299987792969 	| low: 343.25 	| close: 344.24169921875 	| volumn: 1273363 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 00:30:04.814743] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 00:30:02
+date: 2023-08-23 				| open: 439.25 	| high: 442.3949890136719 	| low: 439.1000061035156 	| close: 442.0799865722656 	| adjcloses: 442.0799865722656 	| volumn: 26849685
+[2023-08-24 00:30:05.069709] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 442.3949890136719 	| low: 439.1000061035156 	| close: 442.0799865722656 	| volumn: 26849685 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 00:30:05.267723] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 00:30:03
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 369.3399963378906 	| low: 364.3699951171875 	| close: 368.5799865722656 	| adjcloses: 368.5799865722656 	| volumn: 23811668
+[2023-08-24 00:30:05.475634] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 369.3399963378906 	| low: 364.3699951171875 	| close: 368.5799865722656 	| volumn: 23811668 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 00:30:05.681947] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 00:30:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 344.5299987792969 	| low: 343.25 	| close: 344.29998779296875 	| adjcloses: 344.29998779296875 	| volumn: 1297191
+[2023-08-24 00:30:05.900736] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 344.5299987792969 	| low: 343.25 	| close: 344.29998779296875 	| volumn: 1297191 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 00:40:06.234670] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 00:40:05
+date: 2023-08-23 				| open: 439.25 	| high: 442.3949890136719 	| low: 439.1000061035156 	| close: 442.3699951171875 	| adjcloses: 442.3699951171875 	| volumn: 27427794
+[2023-08-24 00:40:06.476512] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 442.3949890136719 	| low: 439.1000061035156 	| close: 442.3699951171875 	| volumn: 27427794 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 00:40:06.669090] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 00:40:05
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 369.3399963378906 	| low: 364.3699951171875 	| close: 369.0199890136719 	| adjcloses: 369.0199890136719 	| volumn: 24276655
+[2023-08-24 00:40:06.871657] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 369.3399963378906 	| low: 364.3699951171875 	| close: 369.0299987792969 	| volumn: 24276008 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 00:40:07.084178] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 00:39:59
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 344.5299987792969 	| low: 343.25 	| close: 344.4200134277344 	| adjcloses: 344.4200134277344 	| volumn: 1321400
+[2023-08-24 00:40:07.294006] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 344.5299987792969 	| low: 343.25 	| close: 344.4200134277344 	| volumn: 1321400 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 00:50:07.620315] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 00:50:06
+date: 2023-08-23 				| open: 439.25 	| high: 442.57000732421875 	| low: 439.1000061035156 	| close: 442.489990234375 	| adjcloses: 442.489990234375 	| volumn: 28106120
+[2023-08-24 00:50:07.901277] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 442.57000732421875 	| low: 439.1000061035156 	| close: 442.489990234375 	| volumn: 28106120 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 00:50:08.109417] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 00:50:05
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 369.3399963378906 	| low: 364.3699951171875 	| close: 369.06500244140625 	| adjcloses: 369.06500244140625 	| volumn: 24643605
+[2023-08-24 00:50:08.314409] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 369.3399963378906 	| low: 364.3699951171875 	| close: 369.04998779296875 	| volumn: 24643846 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 00:50:08.518584] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 00:49:44
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 344.5299987792969 	| low: 343.25 	| close: 344.4700012207031 	| adjcloses: 344.4700012207031 	| volumn: 1338164
+[2023-08-24 00:50:08.728892] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 344.5299987792969 	| low: 343.25 	| close: 344.4700012207031 	| volumn: 1338164 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 01:00:09.056156] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 01:00:07
+date: 2023-08-23 				| open: 439.25 	| high: 442.6700134277344 	| low: 439.1000061035156 	| close: 442.1702880859375 	| adjcloses: 442.1702880859375 	| volumn: 28897728
+[2023-08-24 01:00:09.302415] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 442.6700134277344 	| low: 439.1000061035156 	| close: 442.1702880859375 	| volumn: 28897728 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 01:00:09.501304] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 01:00:05
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 369.3399963378906 	| low: 364.3699951171875 	| close: 368.6400146484375 	| adjcloses: 368.6400146484375 	| volumn: 25390216
+[2023-08-24 01:00:09.715282] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 369.3399963378906 	| low: 364.3699951171875 	| close: 368.6400146484375 	| volumn: 25390216 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 01:00:09.940916] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 00:59:37
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 344.6000061035156 	| low: 343.25 	| close: 344.3399963378906 	| adjcloses: 344.3399963378906 	| volumn: 1366909
+[2023-08-24 01:00:10.163332] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 344.6000061035156 	| low: 343.25 	| close: 344.3399963378906 	| volumn: 1366909 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 01:10:10.479439] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 01:10:08
+date: 2023-08-23 				| open: 439.25 	| high: 442.67999267578125 	| low: 439.1000061035156 	| close: 442.6708984375 	| adjcloses: 442.6708984375 	| volumn: 29546511
+[2023-08-24 01:10:10.711179] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 442.67999267578125 	| low: 439.1000061035156 	| close: 442.6700134277344 	| volumn: 29547983 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 01:10:10.906255] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 01:10:09
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 369.3399963378906 	| low: 364.3699951171875 	| close: 369.1199035644531 	| adjcloses: 369.1199035644531 	| volumn: 26125569
+[2023-08-24 01:10:11.106876] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 369.3399963378906 	| low: 364.3699951171875 	| close: 369.1199035644531 	| volumn: 26125569 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 01:10:11.311474] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 01:10:01
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 344.7099914550781 	| low: 343.25 	| close: 344.70001220703125 	| adjcloses: 344.70001220703125 	| volumn: 1394267
+[2023-08-24 01:10:11.525967] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 344.7099914550781 	| low: 343.25 	| close: 344.70001220703125 	| volumn: 1394267 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 01:20:11.850814] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 01:20:10
+date: 2023-08-23 				| open: 439.25 	| high: 443.1600036621094 	| low: 439.1000061035156 	| close: 443.0799865722656 	| adjcloses: 443.0799865722656 	| volumn: 30979837
+[2023-08-24 01:20:12.096246] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.1600036621094 	| low: 439.1000061035156 	| close: 443.0799865722656 	| volumn: 30979837 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 01:20:12.299419] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 01:20:08
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 369.6400146484375 	| low: 364.3699951171875 	| close: 369.6195068359375 	| adjcloses: 369.6195068359375 	| volumn: 27232662
+[2023-08-24 01:20:12.522012] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 369.6400146484375 	| low: 364.3699951171875 	| close: 369.6195068359375 	| volumn: 27232662 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 01:20:12.730932] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 01:19:28
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.04998779296875 	| low: 343.25 	| close: 345.04998779296875 	| adjcloses: 345.04998779296875 	| volumn: 1472435
+[2023-08-24 01:20:12.949007] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.04998779296875 	| low: 343.25 	| close: 345.04998779296875 	| volumn: 1472435 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 01:30:13.271360] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 01:30:12
+date: 2023-08-23 				| open: 439.25 	| high: 443.3399963378906 	| low: 439.1000061035156 	| close: 443.3100891113281 	| adjcloses: 443.3100891113281 	| volumn: 32025705
+[2023-08-24 01:30:13.513693] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.3399963378906 	| low: 439.1000061035156 	| close: 443.3100891113281 	| volumn: 32025705 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 01:30:13.708389] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 01:30:11
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 369.8099060058594 	| low: 364.3699951171875 	| close: 369.79998779296875 	| adjcloses: 369.79998779296875 	| volumn: 28070732
+[2023-08-24 01:30:13.911044] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 369.80999755859375 	| low: 364.3699951171875 	| close: 369.80999755859375 	| volumn: 28071008 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 01:30:14.126874] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 01:30:08
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.2099914550781 	| low: 343.25 	| close: 345.17999267578125 	| adjcloses: 345.17999267578125 	| volumn: 1507417
+[2023-08-24 01:30:14.342854] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.2099914550781 	| low: 343.25 	| close: 345.17999267578125 	| volumn: 1507417 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 01:40:14.662487] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 01:40:13
+date: 2023-08-23 				| open: 439.25 	| high: 443.6199951171875 	| low: 439.1000061035156 	| close: 443.3299865722656 	| adjcloses: 443.3299865722656 	| volumn: 33970595
+[2023-08-24 01:40:14.903483] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6199951171875 	| low: 439.1000061035156 	| close: 443.3349914550781 	| volumn: 33971452 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 01:40:15.088785] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 01:40:11
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.0 	| low: 364.3699951171875 	| close: 369.72601318359375 	| adjcloses: 369.72601318359375 	| volumn: 28881916
+[2023-08-24 01:40:15.293555] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.0 	| low: 364.3699951171875 	| close: 369.72601318359375 	| volumn: 28881916 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 01:40:15.497698] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 01:40:10
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 345.1705017089844 	| adjcloses: 345.1705017089844 	| volumn: 1582571
+[2023-08-24 01:40:15.723274] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 345.1705017089844 	| volumn: 1582571 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 01:50:16.063036] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 01:50:14
+date: 2023-08-23 				| open: 439.25 	| high: 443.6199951171875 	| low: 439.1000061035156 	| close: 443.5400085449219 	| adjcloses: 443.5400085449219 	| volumn: 34705077
+[2023-08-24 01:50:16.297950] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6199951171875 	| low: 439.1000061035156 	| close: 443.5400085449219 	| volumn: 34705077 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 01:50:16.483384] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 01:50:13
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.1050109863281 	| low: 364.3699951171875 	| close: 370.05889892578125 	| adjcloses: 370.05889892578125 	| volumn: 29542819
+[2023-08-24 01:50:16.678539] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.1050109863281 	| low: 364.3699951171875 	| close: 370.05889892578125 	| volumn: 29542819 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 01:50:16.878342] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 01:50:07
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 345.2099914550781 	| adjcloses: 345.2099914550781 	| volumn: 1602988
+[2023-08-24 01:50:17.085401] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 345.2099914550781 	| volumn: 1602988 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 02:00:17.408573] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 02:00:15
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.4700012207031 	| adjcloses: 443.4700012207031 	| volumn: 35655904
+[2023-08-24 02:00:17.646899] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.45001220703125 	| volumn: 35658700 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 02:00:17.843714] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 02:00:16
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.989990234375 	| adjcloses: 369.989990234375 	| volumn: 30139096
+[2023-08-24 02:00:18.047978] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.989990234375 	| volumn: 30139096 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 02:00:18.264048] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 02:00:16
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 345.1099853515625 	| adjcloses: 345.1099853515625 	| volumn: 1626396
+[2023-08-24 02:00:18.505035] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 345.1099853515625 	| volumn: 1626396 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 02:10:18.828200] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 02:10:17
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.30999755859375 	| adjcloses: 443.30999755859375 	| volumn: 36622447
+[2023-08-24 02:10:19.066206] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.30999755859375 	| volumn: 36622447 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 02:10:19.258135] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 02:10:17
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.7300109863281 	| adjcloses: 369.7300109863281 	| volumn: 30612288
+[2023-08-24 02:10:19.468720] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.7300109863281 	| volumn: 30612288 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 02:10:19.692325] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 02:09:34
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 345.0199890136719 	| adjcloses: 345.0199890136719 	| volumn: 1648224
+[2023-08-24 02:10:19.901254] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 345.0199890136719 	| volumn: 1648224 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 02:20:20.224055] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 02:20:17
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 442.8800048828125 	| adjcloses: 442.8800048828125 	| volumn: 37764727
+[2023-08-24 02:20:20.472441] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 442.8800048828125 	| volumn: 37764727 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 02:20:20.674365] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 02:20:17
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.29998779296875 	| adjcloses: 369.29998779296875 	| volumn: 31280803
+[2023-08-24 02:20:20.880719] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.29998779296875 	| volumn: 31280803 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 02:20:21.084302] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 02:20:14
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.70001220703125 	| adjcloses: 344.70001220703125 	| volumn: 1682487
+[2023-08-24 02:20:21.304323] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.70001220703125 	| volumn: 1682487 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 02:30:21.627673] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 02:30:20
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0 	| adjcloses: 443.0 	| volumn: 38834424
+[2023-08-24 02:30:21.877417] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 442.9909973144531 	| volumn: 38834728 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 02:30:22.084167] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 02:30:20
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.45001220703125 	| adjcloses: 369.45001220703125 	| volumn: 31982914
+[2023-08-24 02:30:22.301420] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.45001220703125 	| volumn: 31982914 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 02:30:22.542480] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 02:29:55
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.67999267578125 	| adjcloses: 344.67999267578125 	| volumn: 1721310
+[2023-08-24 02:30:22.764858] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.67999267578125 	| volumn: 1721310 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 02:40:23.495961] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 02:40:21
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 442.67498779296875 	| adjcloses: 442.67498779296875 	| volumn: 39750982
+[2023-08-24 02:40:23.734651] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 442.67498779296875 	| volumn: 39751575 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 02:40:23.930313] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 02:40:22
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.20001220703125 	| adjcloses: 369.20001220703125 	| volumn: 32763717
+[2023-08-24 02:40:24.130326] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.20001220703125 	| volumn: 32763717 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 02:40:24.333050] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 02:40:12
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.4100036621094 	| adjcloses: 344.4100036621094 	| volumn: 1757282
+[2023-08-24 02:40:24.548014] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.4100036621094 	| volumn: 1757282 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 02:50:24.880640] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 02:50:23
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 442.69500732421875 	| adjcloses: 442.69500732421875 	| volumn: 40419584
+[2023-08-24 02:50:25.123837] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 442.69500732421875 	| volumn: 40419584 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 02:50:25.312692] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 02:50:21
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.2300109863281 	| adjcloses: 369.2300109863281 	| volumn: 33206213
+[2023-08-24 02:50:25.515315] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.2300109863281 	| volumn: 33206213 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 02:50:25.728956] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 02:50:23
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.4905090332031 	| adjcloses: 344.4905090332031 	| volumn: 1805821
+[2023-08-24 02:50:25.946277] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.4905090332031 	| volumn: 1805821 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 03:00:26.274595] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 03:00:25
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 442.7296142578125 	| adjcloses: 442.7296142578125 	| volumn: 41025590
+[2023-08-24 03:00:26.538765] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 442.7099914550781 	| volumn: 41024716 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 03:00:26.743180] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 03:00:24
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.3399963378906 	| adjcloses: 369.3399963378906 	| volumn: 33684621
+[2023-08-24 03:00:26.942496] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.3450012207031 	| volumn: 33684723 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 03:00:27.146542] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 03:00:12
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.389892578125 	| adjcloses: 344.389892578125 	| volumn: 1831929
+[2023-08-24 03:00:27.358610] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.389892578125 	| volumn: 1831929 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 03:10:27.696428] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 03:10:25
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0899963378906 	| adjcloses: 443.0899963378906 	| volumn: 42612505
+[2023-08-24 03:10:27.949224] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0899963378906 	| volumn: 42612505 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 03:10:28.143264] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 03:10:26
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.8299865722656 	| adjcloses: 369.8299865722656 	| volumn: 34573635
+[2023-08-24 03:10:28.348048] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.8299865722656 	| volumn: 34573635 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 03:10:29.010654] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 03:10:05
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.5400085449219 	| adjcloses: 344.5400085449219 	| volumn: 1878209
+[2023-08-24 03:10:29.223790] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.5400085449219 	| volumn: 1878209 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 03:20:29.564411] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 03:20:28
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 442.97100830078125 	| adjcloses: 442.97100830078125 	| volumn: 43350016
+[2023-08-24 03:20:29.807311] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 442.97100830078125 	| volumn: 43350016 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 03:20:29.991160] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 03:20:27
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.7799987792969 	| adjcloses: 369.7799987792969 	| volumn: 35895485
+[2023-08-24 03:20:30.195315] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.7799987792969 	| volumn: 35896010 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 03:20:30.418651] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 03:20:27
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.4700012207031 	| adjcloses: 344.4700012207031 	| volumn: 1909848
+[2023-08-24 03:20:30.629169] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.4700012207031 	| volumn: 1909848 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 03:30:30.950388] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 03:30:29
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.1099853515625 	| adjcloses: 443.1099853515625 	| volumn: 44905349
+[2023-08-24 03:30:31.195585] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.1099853515625 	| volumn: 44905349 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 03:30:31.389541] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 03:30:30
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.7749938964844 	| adjcloses: 369.7749938964844 	| volumn: 36626287
+[2023-08-24 03:30:31.584027] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.7749938964844 	| volumn: 36626287 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 03:30:31.785410] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 03:30:13
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.6600036621094 	| adjcloses: 344.6600036621094 	| volumn: 1945208
+[2023-08-24 03:30:32.391706] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.6600036621094 	| volumn: 1945208 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 03:40:32.713228] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 03:40:31
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.25 	| adjcloses: 443.25 	| volumn: 46924613
+[2023-08-24 03:40:32.954503] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.25 	| volumn: 46924613 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 03:40:33.150903] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 03:40:31
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.80999755859375 	| adjcloses: 369.80999755859375 	| volumn: 38000661
+[2023-08-24 03:40:33.346198] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.81500244140625 	| volumn: 38001850 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 03:40:33.559142] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 03:40:30
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8111877441406 	| adjcloses: 344.8111877441406 	| volumn: 1985611
+[2023-08-24 03:40:33.759739] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8111877441406 	| volumn: 1985611 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 03:50:34.078878] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 03:50:32
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0309143066406 	| adjcloses: 443.0309143066406 	| volumn: 49750184
+[2023-08-24 03:50:34.359019] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0309143066406 	| volumn: 49750184 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 03:50:34.554916] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 03:50:33
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.489990234375 	| adjcloses: 369.489990234375 	| volumn: 39396206
+[2023-08-24 03:50:34.765674] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.489990234375 	| volumn: 39396206 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 03:50:34.962484] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 03:50:32
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.760009765625 	| adjcloses: 344.760009765625 	| volumn: 2078973
+[2023-08-24 03:50:35.167264] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.760009765625 	| volumn: 2078973 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 04:00:35.504745] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 442.8699951171875 	| adjcloses: 442.8699951171875 	| volumn: 58937564
+[2023-08-24 04:00:35.752161] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 442.8699951171875 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 04:00:35.952939] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 43174875
+[2023-08-24 04:00:36.154629] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 43174875 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 04:00:36.346732] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.760009765625 	| adjcloses: 344.760009765625 	| volumn: 2470629
+[2023-08-24 04:00:36.609691] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.760009765625 	| volumn: 2470629 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 04:10:36.945333] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 442.8699951171875 	| adjcloses: 442.8699951171875 	| volumn: 58937564
+[2023-08-24 04:10:37.583094] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 442.8699951171875 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 04:10:37.769494] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 43174875
+[2023-08-24 04:10:37.962458] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 43174875 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 04:10:38.167698] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.760009765625 	| adjcloses: 344.760009765625 	| volumn: 2470629
+[2023-08-24 04:10:38.377028] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.760009765625 	| volumn: 2470629 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 04:20:38.685934] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 442.8699951171875 	| adjcloses: 442.8699951171875 	| volumn: 58937564
+[2023-08-24 04:20:38.953065] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 442.8699951171875 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 04:20:39.150447] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 43174875
+[2023-08-24 04:20:39.437568] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 43174875 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 04:20:39.682571] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.760009765625 	| adjcloses: 344.760009765625 	| volumn: 2470629
+[2023-08-24 04:20:39.892970] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.760009765625 	| volumn: 2470629 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 04:30:40.222707] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 442.8699951171875 	| adjcloses: 442.8699951171875 	| volumn: 58937564
+[2023-08-24 04:30:40.508175] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 442.8699951171875 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 04:30:40.702797] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 43174875
+[2023-08-24 04:30:40.905635] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 43174875 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 04:30:41.111588] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2470629
+[2023-08-24 04:30:41.321346] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2470629 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 04:40:41.646051] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 04:40:41.904117] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 04:40:42.096048] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 43174875
+[2023-08-24 04:40:42.323294] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 43174875 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 04:40:42.542864] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2470629
+[2023-08-24 04:40:42.786577] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2470629 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 04:50:43.131092] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 04:50:43.808299] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 04:50:44.024006] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 43174875
+[2023-08-24 04:50:44.256161] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 43174875 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 04:50:44.536128] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2470629
+[2023-08-24 04:50:44.803864] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2470629 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 05:00:45.100481] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 05:00:45.346907] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 05:00:45.546296] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 50740472
+[2023-08-24 05:00:45.747686] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 50740472 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 05:00:45.956849] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2588604
+[2023-08-24 05:00:46.157470] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2588604 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 05:10:46.484936] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 05:10:46.726557] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 05:10:46.939845] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 50740472
+[2023-08-24 05:10:47.148832] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 50740472 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 05:10:47.365148] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2588604
+[2023-08-24 05:10:47.576882] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2588604 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 05:20:47.897286] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 05:20:48.140427] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 05:20:48.728026] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 50740472
+[2023-08-24 05:20:48.921144] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 50740472 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 05:20:49.511067] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2588604
+[2023-08-24 05:20:49.722121] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2588604 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 05:30:50.042250] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 05:30:50.280767] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 05:30:50.474432] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 50740472
+[2023-08-24 05:30:50.677971] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 50740472 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 05:30:50.893164] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2588604
+[2023-08-24 05:30:51.097192] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2588604 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 05:40:51.412464] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 05:40:51.669430] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 05:40:51.868624] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 50740472
+[2023-08-24 05:40:52.074434] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 50740472 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 05:40:52.280096] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2588604
+[2023-08-24 05:40:52.499677] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2588604 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 05:50:52.833719] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 05:50:53.074372] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 05:50:53.261547] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 50740472
+[2023-08-24 05:50:53.461260] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 50740472 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 05:50:54.068756] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2588604
+[2023-08-24 05:50:54.280551] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2588604 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 06:00:54.596487] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 06:00:54.833752] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 06:00:55.035942] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 50740472
+[2023-08-24 06:00:55.234108] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 50740472 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 06:00:55.446861] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2588604
+[2023-08-24 06:00:55.664308] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2588604 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 06:10:55.986106] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 06:10:56.227061] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 06:10:56.418702] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 50740472
+[2023-08-24 06:10:56.629922] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 50740472 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 06:10:56.835164] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2588604
+[2023-08-24 06:10:57.034175] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2588604 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 06:20:57.379387] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 06:20:57.647337] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 06:20:57.842185] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 50740472
+[2023-08-24 06:20:58.089077] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 50740472 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 06:20:58.302722] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2588604
+[2023-08-24 06:20:58.515207] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2588604 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 06:30:58.845275] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 06:30:59.090532] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 06:30:59.311089] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 50740472
+[2023-08-24 06:30:59.522773] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 50740472 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 06:30:59.738523] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2588604
+[2023-08-24 06:30:59.953170] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2588604 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 06:41:00.280010] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 06:41:00.516844] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 06:41:00.724265] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 50740472
+[2023-08-24 06:41:00.937982] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 50740472 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 06:41:01.153521] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2588604
+[2023-08-24 06:41:01.367530] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2588604 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 06:51:01.726867] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 06:51:01.967894] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 06:51:02.166850] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 50740472
+[2023-08-24 06:51:02.367531] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 50740472 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 06:51:02.973624] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2588604
+[2023-08-24 06:51:03.614658] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2588604 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 07:01:03.948407] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 07:01:04.217546] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 07:01:04.803035] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 50740472
+[2023-08-24 07:01:05.390941] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 50740472 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 07:01:06.069968] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2588604
+[2023-08-24 07:01:06.718308] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2588604 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 07:11:07.034293] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 07:11:07.309801] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 07:11:07.501616] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 50740472
+[2023-08-24 07:11:07.699658] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 50740472 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 07:11:07.911741] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2588604
+[2023-08-24 07:11:08.121324] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2588604 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 07:21:08.452357] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 07:21:08.801864] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 07:21:09.003831] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 50740472
+[2023-08-24 07:21:09.203631] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 50740472 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 07:21:09.441269] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2588604
+[2023-08-24 07:21:09.652877] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2588604 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 07:31:09.976788] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 07:31:10.216040] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 07:31:10.414434] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 50740472
+[2023-08-24 07:31:10.613709] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 50740472 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 07:31:10.811747] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2588604
+[2023-08-24 07:31:11.061957] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2588604 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 07:41:11.392457] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 07:41:11.635621] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 07:41:11.825898] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 50740472
+[2023-08-24 07:41:12.029352] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 50740472 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 07:41:12.237340] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2588604
+[2023-08-24 07:41:12.447746] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2588604 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 07:51:12.781031] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 07:51:13.026243] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 07:51:13.248363] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 51720919
+[2023-08-24 07:51:13.454281] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 51720919 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 07:51:13.701007] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2588604
+[2023-08-24 07:51:13.912138] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2588604 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 08:01:14.278160] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 08:01:14.525850] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 08:01:14.717643] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 51720919
+[2023-08-24 08:01:14.925355] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 51720919 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 08:01:15.143872] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2588604
+[2023-08-24 08:01:15.448016] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2588604 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 08:11:15.779923] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 08:11:16.035363] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 08:11:16.232745] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 51720919
+[2023-08-24 08:11:16.473470] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 51720919 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 08:11:16.678778] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2588604
+[2023-08-24 08:11:16.934674] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2588604 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 08:21:17.250613] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 08:21:17.496214] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 08:21:17.692368] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 51720919
+[2023-08-24 08:21:17.889699] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 51720919 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 08:21:18.090388] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2588604
+[2023-08-24 08:21:18.304686] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2588604 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 08:31:18.623113] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 58937564
+[2023-08-24 08:31:18.871531] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 58937564 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 08:31:19.062382] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 51720919
+[2023-08-24 08:31:19.268634] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3699951171875 	| close: 369.1099853515625 	| volumn: 51720919 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 08:31:19.583480] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-24 04:00:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2588604
+[2023-08-24 08:31:19.797480] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.39990234375 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2588604 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 08:41:20.125622] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 68265800
+[2023-08-24 08:41:20.364684] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 68265800 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 08:41:20.568066] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 51415200
+[2023-08-24 08:41:20.781063] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| volumn: 51415200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 08:41:20.988484] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2600200
+[2023-08-24 08:41:21.212942] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2600200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 08:51:21.539029] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 68265800
+[2023-08-24 08:51:21.770445] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 68265800 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 08:51:21.971513] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 51415200
+[2023-08-24 08:51:22.267486] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| volumn: 51415200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 08:51:22.474803] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2600200
+[2023-08-24 08:51:22.687481] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2600200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 09:01:23.014345] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 68265800
+[2023-08-24 09:01:23.306793] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 68265800 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 09:01:23.555050] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 51415200
+[2023-08-24 09:01:23.778955] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| volumn: 51415200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 09:01:24.004396] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2600200
+[2023-08-24 09:01:24.246423] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2600200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 09:11:24.569169] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 68265800
+[2023-08-24 09:11:24.810217] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 68265800 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 09:11:25.064691] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 51415200
+[2023-08-24 09:11:25.266025] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| volumn: 51415200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 09:11:25.478678] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2600200
+[2023-08-24 09:11:25.699494] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2600200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 09:21:26.019513] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 68265800
+[2023-08-24 09:21:26.262069] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 68265800 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 09:21:26.461040] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 51415200
+[2023-08-24 09:21:26.667055] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| volumn: 51415200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 09:21:26.872564] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2600200
+[2023-08-24 09:21:27.079643] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2600200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 09:31:27.412879] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 68265800
+[2023-08-24 09:31:27.661671] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 68265800 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 09:31:27.864458] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 51415200
+[2023-08-24 09:31:28.060821] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| volumn: 51415200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 09:31:28.279153] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2600200
+[2023-08-24 09:31:28.487586] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2600200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 09:41:28.810773] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 68265800
+[2023-08-24 09:41:29.048522] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 68265800 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 09:41:29.237473] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 51415200
+[2023-08-24 09:41:29.446261] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| volumn: 51415200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 09:41:29.650654] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2600200
+[2023-08-24 09:41:29.872852] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2600200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 09:51:30.257692] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 68265800
+[2023-08-24 09:51:30.500437] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 68265800 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 09:51:30.705624] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 51415200
+[2023-08-24 09:51:30.920302] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| volumn: 51415200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 09:51:31.133834] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2600200
+[2023-08-24 09:51:31.338887] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2600200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 10:01:31.658839] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 68265800
+[2023-08-24 10:01:31.892882] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 68265800 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 10:01:32.097695] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 51415200
+[2023-08-24 10:01:32.693458] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| volumn: 51415200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 10:01:32.907204] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2600200
+[2023-08-24 10:01:33.119470] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2600200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 10:11:33.467078] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 68265800
+[2023-08-24 10:11:33.739073] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 68265800 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 10:11:33.938165] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 51415200
+[2023-08-24 10:11:34.141869] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| volumn: 51415200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 10:11:34.349585] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2600200
+[2023-08-24 10:11:34.591311] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2600200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 10:21:34.947667] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 68265800
+[2023-08-24 10:21:35.211754] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 68265800 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 10:21:35.418212] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 51415200
+[2023-08-24 10:21:35.625453] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| volumn: 51415200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 10:21:35.823740] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2600200
+[2023-08-24 10:21:36.043828] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2600200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 10:31:36.373298] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 68265800
+[2023-08-24 10:31:36.614103] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 68265800 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 10:31:36.825722] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 51415200
+[2023-08-24 10:31:37.030645] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| volumn: 51415200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 10:31:37.246347] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2600200
+[2023-08-24 10:31:37.463057] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2600200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 10:41:37.795333] source: my crawler 	| etf_tag: SPY 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| adjcloses: 443.0299987792969 	| volumn: 68265800
+[2023-08-24 10:41:38.036552] source: yfinance 		| etf_tag: SPY
+time: 2023-08-23 00:00:00 EDT 	| open: 439.25 	| high: 443.6700134277344 	| low: 439.1000061035156 	| close: 443.0299987792969 	| volumn: 68265800 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 10:41:38.235073] source: my crawler 	| etf_tag: QQQ 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| adjcloses: 369.1099853515625 	| volumn: 51415200
+[2023-08-24 10:41:38.438202] source: yfinance 		| etf_tag: QQQ
+time: 2023-08-23 00:00:00 EDT 	| open: 364.5799865722656 	| high: 370.2200012207031 	| low: 364.3599853515625 	| close: 369.1099853515625 	| volumn: 51415200 	| dividends: 0.0 	| stock splits: 0.0
+[2023-08-24 10:41:38.661035] source: my crawler 	| etf_tag: DIA 	| beijing_time: 2023-08-23 21:30:00
+date: 2023-08-23 				| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| adjcloses: 344.8299865722656 	| volumn: 2600200
+[2023-08-24 10:41:38.885329] source: yfinance 		| etf_tag: DIA
+time: 2023-08-23 00:00:00 EDT 	| open: 343.5299987792969 	| high: 345.3999938964844 	| low: 343.25 	| close: 344.8299865722656 	| volumn: 2600200 	| dividends: 0.0 	| stock splits: 0.0
