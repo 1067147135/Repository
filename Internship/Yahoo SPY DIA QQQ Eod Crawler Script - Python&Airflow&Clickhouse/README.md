@@ -5,7 +5,7 @@
 从 [Yahoo finance](https://finance.yahoo.com/) 抓取 SPY，DIA，QQQ这3个美股ETF的日线数据。
 
 ## 项目的基本思路
-- `check_update_time.py` 从下一个午夜开始，每隔十分钟访问接口，前期用于监控 [Yahoo finance](https://finance.yahoo.com/) 的数据更新时间，用于确定将爬虫任务定时在什么时候执行。（程序输出参考 `src/log/monitor.log`）
+- `check_update_time.py` 每周二到周六 4 点到 10 点期间，每隔十分钟访问接口查询日线数据。用于前期监控 [Yahoo finance](https://finance.yahoo.com/) 的数据更新时间，以确定将爬虫任务定时在什么时候执行。（程序输出参考 `src/log/monitor.log`）
 - `index_eod_prices_update.py` 每周二至周六早上 6 点从 [Yahoo finance](https://finance.yahoo.com/) 抓取 SPY，DIA，QQQ这3个美股ETF的日线数据并入库至 72 Clickhouse 数据库的 his_global.index_eod_prices 数据表。没有抓到数据或者数据入库失败都将触发通过企业微信 bot 发送的告警，并在 1 小时后重试，最多重试 2 次。（程序日志参考 `src/log/index_eod_prices_update_0600.log`）
 - `index_eod_prices_check.py` 每周二至周六早上 6 点半检查数据库是否成功录入今天的数据，录入的数据是否一致（最高价最大，最低价最小），未录入数据或者录入数据不一致都会触发通过企业微信 bot 发送的告警。
 - 项目使用的参数全部提取至 `my_config.py` 统一管理。
@@ -20,12 +20,12 @@ python 模块：
 - airflow （周期性执行更新脚本）
 - logging （轮转日志，在记录运行信息的同时限制 log 的内存占用）
 - base64 （加密数据库密码等敏感信息）
-- schedule  (设定定时执行任务)
+- sched  (设定定时执行任务)
 
 
 ## 项目实现的核心函数
 - **job_monitor()**：
-  - 通过 schedule 控制，从下一个 0 点开始，每 10 分钟执行一次。
+  - 通过 sched 控制，每周二到周六 4 点到 10 点期间，每 10 分钟执行一次。
   - 通过两个途径（网页端使用的 query1 接口，和 yfinance 封装使用的 query2 接口）获取三支 etf 的日线数据，并将数据存到 `/src/log/monitor.log` 以备分析。
 - **index_eod_prices_update()**: 
   - 从 [Yahoo finance](https://finance.yahoo.com/) 抓取 SPY，DIA，QQQ这3个美股ETF的日线数据并入库至 72 Clickhouse 数据库的 his_global.index_eod_prices 数据表。

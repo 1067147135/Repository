@@ -3,7 +3,7 @@ import datetime
 import time
 import json
 import os
-import schedule
+import sched
 import yfinance as yf
 import pandas as pd
 
@@ -71,21 +71,35 @@ def job_monitor():
 
         
 if __name__ == '__main__':
-    
-
-    # set job, run every 10 minutes
-    schedule.every(10).minutes.do(job_monitor)
-
-    # compute the seconds to next midnight (beijing timezone)
-    now = time.time()
-    next_midnight = (int(now) // 86400 + 1) * 86400 - 28800
-    seconds_to_midnight = next_midnight - now
-
-    # wait until next midnight
-    logger.info(f"The program will run after {seconds_to_midnight} seconds")
-    time.sleep(seconds_to_midnight)
+    # Initialize a new scheduler, passing the time and delay functions
+    s = sched.scheduler(time.time, time.sleep)
 
     # start doing job
     while True:
-        schedule.run_pending()
-        time.sleep(1)
+        # Get the current time
+        now = datetime.datetime.now()
+
+        # Set the task start time
+        start_time = now.replace(hour=4, minute=0, second=0, microsecond=0)
+
+        # Set the end start time
+        end_time = now.replace(hour=10, minute=0, second=0, microsecond=0)
+
+        # Determine whether it is within the task time range
+        if now.weekday() in [1, 2, 3, 4, 5] and start_time <= now <= end_time:
+            # Calculate the next execution time of the task
+            next_time = now + datetime.timedelta(minutes=10)
+
+            # Register a scheduled task
+            s.enterabs(time.mktime(next_time.timetuple()), 1, job_monitor, ())
+            # Execute task registered (blocking)
+            s.run()
+        else:
+            # compute the seconds to next 4:00 (beijing timezone)
+            now = time.time()
+            next_0400 = (int(now) // 86400 + 1) * 86400 - 14400
+            seconds_to_0400 = next_0400 - now
+
+            # wait until next 4:00
+            logger.info(f"The program will run after {seconds_to_0400} seconds")
+            time.sleep(seconds_to_0400)
