@@ -98,8 +98,8 @@ CREATE TABLE xxx.google_patent_data_common
     bopu_update_time DateTime64(6, 'UTC') default toDateTime64(toString(now64(6)), 6, 'UTC') Codec (ZSTD)
 )
 ENGINE = MergeTree
-PARTITION BY toYYYYMM(filing_creation_date)
-ORDER BY (filing_creation_date, patent_id)
+PARTITION BY toYYYYMM(priority_date)
+ORDER BY (priority_date, patent_id)
 SETTINGS index_granularity = 8192;
 
 

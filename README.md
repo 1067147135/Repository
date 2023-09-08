@@ -25,7 +25,8 @@ Notes: Maybe the program can't run normally because the environment is incompati
 ```
 ├─Internship
 │  ├─Database Update Detection Alert Script - Python&Airflow
-│  └─Google Patent Crawler Script - Python&Selenium&Requests&Clickhouse&Mysql&Multiprocessing&Threading
+│  ├─Google Patent Crawler Script - Python&Selenium&Requests&Clickhouse&Mysql&Multiprocessing&Threading
+│  └─Yahoo SPY DIA QQQ Eod Crawler Script - Python&Airflow&Clickhouse
 ├─Research
 │  └─Efficient Hop-Constrained s-t Simple Path Enumeration - C++&OpenMP
 └─Schoolwork
